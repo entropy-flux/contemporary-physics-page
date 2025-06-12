@@ -1,0 +1,3 @@
+[submodule "pages/contemporary-physics"]
+	path = pages/contemporary-physics
+	url = https://github.com/entropy-flux/contemporary-physics.git
