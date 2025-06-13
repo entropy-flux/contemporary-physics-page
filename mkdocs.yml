@@ -1,12 +1,10 @@
 site_name: "Física Contemporánea" 
-docs_dir: "pages/fisica-contemporanea"
+docs_dir: "contemporary-physics"
   
 theme:
   name: material
 
-markdown_extensions:
-  - mdx_math:
-      enable_dollar_delimiter: True
+markdown_extensions: 
   - pymdownx.arithmatex:
       generic: true 
      

@@ -1,0 +1,23 @@
+[project]
+name = "contemporary-physics-page"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "mr-mapache",email = "eric.m.cardozo@mi.unc.edu.ar"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.6.14"
+pymdown-extensions = "^10.15"
+mkdocs-simple-hooks = "^0.1.5"
+

@@ -1,3 +1,4 @@
+git submodule add <repository_url> <path/to/submodule>
 git submodule update --init --recursive
 git clone --recurse-submodules <repo_url>
-git submodule update --remote --merge
+git submodule update --remote contemporary-physics
