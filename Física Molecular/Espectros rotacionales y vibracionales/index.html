@@ -1,0 +1,1174 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../El%20enlace%20i%C3%B3nico/">
+      
+      
+        <link rel="next" href="../Interacci%C3%B3n%20de%20Van%20Der%20Wals/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Espectros rotacionales y vibracionales - Física Contemporánea</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ejemplos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Física Contemporánea" class="md-header__button md-logo" aria-label="Física Contemporánea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Física Contemporánea
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Espectros rotacionales y vibracionales
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Física Contemporánea" class="md-nav__button md-logo" aria-label="Física Contemporánea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Física Contemporánea
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Física Molecular
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Física Molecular
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../El%20enlace%20i%C3%B3nico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    El enlace iónico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Espectros rotacionales y vibracionales
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Espectros rotacionales y vibracionales
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#energia-rotacional-del-textco" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energía rotacional del \(\text{CO}\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#espectro-rotacional-del-texthcl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espectro rotacional del \(\text{HCl}\).
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#potencial-de-morse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Potencial de Morse
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reglas-de-transicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reglas de transición
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#espectroscopia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espectroscopía
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Espectroscopía">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#espectroscopia-rotacional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espectroscopía rotacional
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Espectroscopía rotacional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#espectroscopia-roto-vibracional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espectroscopía roto-vibracional
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Espectroscopía roto-vibracional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#espectroscopia-rotacional-del-texthcl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espectroscopia rotacional del \(\text{HCl}\).
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Interacci%C3%B3n%20de%20Van%20Der%20Wals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interacción de Van Der Wals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../La%20mol%C3%A9cula%20de%20hidrogeno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    La molécula de hidrogeno
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Orbitales%20moleculares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Orbitales moleculares
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Física Núclear
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Física Núclear
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F%C3%ADsica%20N%C3%BAclear/Desintegraci%C3%B3n%20alfa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Desintegración alfa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F%C3%ADsica%20N%C3%BAclear/Desintegraci%C3%B3n%20beta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Desintegración beta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F%C3%ADsica%20N%C3%BAclear/Estructura%20nuclear/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estructura nuclear
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Física de Partículas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Física de Partículas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F%C3%ADsica%20de%20Part%C3%ADculas/Aniquilaci%C3%B3n%20Electr%C3%B3n-Positr%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aniquilación Electrón Positrón
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F%C3%ADsica%20de%20Part%C3%ADculas/Dispersi%C3%B3n%20Electr%C3%B3n-Mu%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dispersión Electrón Muón
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#energia-rotacional-del-textco" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energía rotacional del \(\text{CO}\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#espectro-rotacional-del-texthcl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espectro rotacional del \(\text{HCl}\).
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#potencial-de-morse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Potencial de Morse
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reglas-de-transicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reglas de transición
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#espectroscopia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espectroscopía
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Espectroscopía">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#espectroscopia-rotacional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espectroscopía rotacional
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Espectroscopía rotacional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#espectroscopia-roto-vibracional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espectroscopía roto-vibracional
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Espectroscopía roto-vibracional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#espectroscopia-rotacional-del-texthcl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espectroscopia rotacional del \(\text{HCl}\).
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Espectros rotacionales y vibracionales</h1>
+
+<p>Una molécula moviéndose libremente en el espacio puede experimentar tres tipos de movimiento fundamentales: traslación, rotación y vibración.</p>
+<p>Supongamos una molécula con posición <span class="arithmatex">\(\vec{R}_{CM}\)</span>, una distancia inter-nuclear <span class="arithmatex">\(\vec{R}\)</span> y masa reducida <span class="arithmatex">\(\mu\)</span>.  Bajo esta descripción podemos se puede desacoplar el movimiento de una molécula en dos grupos:</p>
+<ul>
+<li>El movimiento de su centro de masa.</li>
+<li>Los movimientos con respecto a su centro de masa.</li>
+</ul>
+<p>Para un sistema de muchas moléculas se puede estudiar el primer grupo bajo el marco de la mecánica estadística. Por el momento nos interesa el segundo grupo.</p>
+<p>Escribamos el hamiltoniano de una molécula con respecto a su centro de masa en coordenadas esféricas en términos del operador momento angular <span class="arithmatex">\(\vec{L}\)</span>.</p>
+<div class="arithmatex">\[
+\hat{H} = -\frac{\hbar^2}{2\mu}\left(\frac{1}{R^2} \frac{\partial}{\partial R}(R^2\frac{\partial}{\partial R}) - \frac{1}{R^2}\frac{\hat{L}^2}{\hbar^2} \right) + \hat{V}
+\]</div>
+<p>Con <span class="arithmatex">\(\hat{V}\)</span> un potencial, el cual por simplicidad suponemos que solo depende de <span class="arithmatex">\(R\)</span>. Luego los autoestados de dicho hamiltoniano <span class="arithmatex">\(\ket{\psi}\)</span> pueden escribirse en términos de una parte radial y los autoestados del operador <span class="arithmatex">\(\hat{L}^2\)</span>, es decir los armónicos esféricos. Esto nos indica que una molécula puede tanto vibrar como rotar.  </p>
+<p>Para moléculas estables, sabemos que una separación inter-nuclear de equilibrio existe, supongamos por el momento las vibraciones pueden considerarse oscilaciones pequeñas al rededor de esta, es decir <span class="arithmatex">\(R \approx R_0\)</span>. Bajo esta aproximación podemos desacoplar el movimiento vibracional del movimiento de rotacional de la molécula, es decir considerarlos independientes. Escribimos los hamiltonianos para cada uno:</p>
+<div class="arithmatex">\[ \hat{H}_{rot} \approx \frac{\hat{L}^2}{2\mu R_0^2} \qquad
+\hat{H}_{vib} \approx   -\frac{\hbar^2}{2\mu} \frac{1}{R^2} \frac{\partial}{\partial R}(R^2\frac{\partial}{\partial R}) + \hat{V}
+\]</div>
+<p>Con <span class="arithmatex">\(R\)</span> el modulo de <span class="arithmatex">\(\vec{R}\)</span>. Luego el hamiltoniano de una molécula simplemente será <span class="arithmatex">\(\hat{H} = \hat{H}_{rot} + \hat{H}_{vib}\)</span>. Notemos que el hamiltoniano de rotación tendrá autoestados de la forma <span class="arithmatex">\(\ket{\psi} \sim \ket{l, m}\)</span> con auto-energías:</p>
+<div class="arithmatex">\[
+E^l_{rot} = \frac{\hbar^2l(l+1)}{2\mu R_0^2} \quad l = 0, 1, 2, ...
+\]</div>
+<p>Para el caso vibracional, se puede reducir la dimensión de la ecuación de Schrödinger  tomando ecuaciones de onda de la forma <span class="arithmatex">\(\frac{U(R)}{R}\)</span>, es decir:</p>
+<div class="arithmatex">\[
+\psi(\vec{R}) \sim \frac{U(R)}{R} \Rightarrow \hat{H}_{vib} \psi(\vec{R})  = -\frac{\hbar^2}{2\mu}\frac{\partial^2}{\partial^2R}\psi(\vec{R})  + V(R)
+\]</div>
+<p>Si desarrollamos <span class="arithmatex">\(V(R)\)</span> hasta segundo orden, al rededor de la posición de equilibrio <span class="arithmatex">\(R_0\)</span>:</p>
+<div class="arithmatex">\[ 
+V(R) \approx V(R_0) + \frac{1}{2}V''(R_0)(R-R_0)^2
+\]</div>
+<p>El hamiltoniano <span class="arithmatex">\(\hat{H}_v\)</span> se transforma en el hamiltoniano del oscilador armónico desplazado. Teniendo en cuenta que la energía cinética es invariante ante translaciones, hacemos el reemplazo de variables <span class="arithmatex">\(R - R_0 \equiv r\)</span> y escribimos:</p>
+<div class="arithmatex">\[ 
+\hat{H}_{vib} \psi(\vec{r}) \approx -\frac{\hbar^2}{2\mu} \frac{\partial}{\partial r^2} \psi(\vec{r}) + \frac{1}{2}kr^2\psi(\vec{r}) = (E_{vib} - V(R_0))\psi(\vec{r})
+\]</div>
+<p>Las auto-energías de esta ecuación son las del oscilador armónico, las cuales son bien conocidas y las podemos escribir como:</p>
+<div class="arithmatex">\[ 
+E_{vib}^v =V(R_0)+ \hbar\omega(v + \frac{1}{2}) \qquad v = 0, 1, 2, ...
+\]</div>
+<p>Finalmente la energía de la molécula será simplemente igual a la suma de las energías rotacional y vibracional y podemos describir el espectro de energías roto-vibracional de una molécula como:</p>
+<div class="arithmatex">\[
+E^{v,l} = V(R_0 ) + \hbar \omega(v + \frac{1}{2}) + \frac{\hbar^2l(l+1)}{2\mu R_0^2} \quad v=0,1,2 ... \quad l = 0,1,2 ...
+\]</div>
+<p>En donde <span class="arithmatex">\(\omega^2 = \frac{k}{\mu}\)</span>  con <span class="arithmatex">\(k \equiv V''(R_0)\)</span> para algún potencial <span class="arithmatex">\(V(R)\)</span> que que describa la interacción entre átomos en la molécula. </p>
+<h3 id="ejemplos">Ejemplos</h3>
+<h4 id="energia-rotacional-del-textco">Energía rotacional del <span class="arithmatex">\(\text{CO}\)</span></h4>
+<p>Calculemos la energía <strong>rotacional</strong> de los tres primeros niveles rotacionales puros molécula <span class="arithmatex">\(\text{CO}\)</span>. Determinemos también la longitud de onda de los fotones absorbidos en las transiciones entre estos niveles de energía. La longitud de enlace de la molécula es <span class="arithmatex">\(1,13\text{Å}\)</span></p>
+<p>Los niveles de energía rotacionales para el <span class="arithmatex">\(\text{CO}\)</span> serán:</p>
+<div class="arithmatex">\[ 
+E_{rotacional}^l = \frac{\hbar^2l(l+1)}{2\mu R_0^2} \qquad l = 1,2,... \qquad \mu \frac{1}{\frac{1}{m_{\text{C}} } + \frac{1}{m_{\text{O}} }}
+\]</div>
+<p>Reemplazando <span class="arithmatex">\(R_0 = 1,13\text{Å}\)</span> para <span class="arithmatex">\(l = 0, 1, 2\)</span>:</p>
+<p>Obtenemos las energías: <span class="arithmatex">\(E_{rot}^0 = 0\)</span>,  <span class="arithmatex">\(E_{rot}^1 = 0.46 \text{meV}\)</span> y <span class="arithmatex">\(E_{rot}^2 = 1.42 \text{meV}\)</span>. Para realizar transiciones entre estos niveles la molécula necesita absorber energía la cual se transporta a través de fotones. La energía necesaria para una transición que la molécula realice la transición <span class="arithmatex">\(l \rightarrow l + 1\)</span> será:</p>
+<div class="arithmatex">\[ 
+\Delta E^l = E^{l+1} - E^l  = \frac{\hbar^2}{2\mu R_0^2}[(l+1)(l+2) -l(l+1)] = \frac{\hbar^2}{2\mu R_0^2}(l+1)
+\]</div>
+<p>Por otra parte la energía de un fotón depende de su longitud de onda de la forma:</p>
+<div class="arithmatex">\[ 
+E_{\gamma} = h \nu = \frac{hc}{\lambda}
+\]</div>
+<p>Finalmente podemos hallar la longitud de onda de los fotones absorbidos en estas transiciones, igualando la energía necesaria para la transición con la energía del fotón.</p>
+<div class="arithmatex">\[ \frac{hc}{\lambda_l} = \Delta E^l \Rightarrow \lambda_l = \frac{hc}{\Delta E^l}\]</div>
+<p>Obteniéndose que los fotones absorbidos tendrán longitud de onda <span class="arithmatex">\(\lambda_0 = 2.68 \text{mm}\)</span> y <span class="arithmatex">\(\lambda_1 = 128 \text{mm}\)</span>.  </p>
+<h4 id="espectro-rotacional-del-texthcl">Espectro rotacional del <span class="arithmatex">\(\text{HCl}\)</span>.</h4>
+<p>La separación entre líneas del espectro rotacional puro de <span class="arithmatex">\(\text{HCl}\)</span> es <span class="arithmatex">\(6,35×10^{11} \text{Hz}\)</span>. Determinemos la separación inter-nuclear de esta molécula.</p>
+<p>Cuando hablamos de separación entre líneas en un espectro rotacional, nos referimos en realidad a los valores de energía para los cuales hubo una transición de energía, es decir, la molécula absorbió una cantidad <span class="arithmatex">\(\Delta E\)</span> de energía y paso a un estado rotacional con un numero cuántico <span class="arithmatex">\(l\)</span> mayor al que tenia. Estos son los niveles de energía que serán medidos y la separación entre estos puede expresarse como:</p>
+<div class="arithmatex">\[ \Delta E^l = E^{l+1} - E^{l} = \frac{\hbar^2}{2\mu R_0^2}[(l+1)(l+2) -l(l+1)] = \frac{\hbar^2}{\mu R_0^2}(l+1)\]</div>
+<p>Puede verse que la separación entre dos de estas líneas será constante igual a:</p>
+<div class="arithmatex">\[ 
+h \nu = \frac{\hbar^2}{\mu R_0^2}
+\]</div>
+<p>Luego la separación inter-nuclear de la molécula puede expresarse simplemente como:  </p>
+<div class="arithmatex">\[ 
+R_0 = \sqrt{\frac{\hbar}{2\pi\mu\nu}} \qquad \mu = \frac{1}{\frac{1}{m_{\text{H}} } + \frac{1}{m_{\text{Cl}} }} \approx m_H
+\]</div>
+<p>Finalmente reemplazando:
+- <span class="arithmatex">\(\nu = 6,35×10^{11} \text{s}^{-1}\)</span>
+- <span class="arithmatex">\(m_H \approx 1.00784 \times 931.5 \text{MeV}/c^2\)</span> 
+- <span class="arithmatex">\(\hbar = 4.135 \text{eV}\cdot s\)</span></p>
+<p>Obtenemos que la separación inter-nuclear de equilibrio será de <span class="arithmatex">\(R_0 \approx 1.27 \text{Å}\)</span>.</p>
+<h4 id="potencial-de-morse">Potencial de Morse</h4>
+<p>Para muchas moléculas ligadas covalentemente, la energía potencial se puede describir adecuadamente por medio del potencial de Morse:</p>
+<div class="arithmatex">\[ 
+V(R) = A \left( e^{-2a(R-R_0)} - 2e^{-a(R-R_0)} \right) 
+\]</div>
+<p>Donde <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(a\)</span> y <span class="arithmatex">\(R_0\)</span> son parámetros característicos de cada molécula. La separación inter-nuclear de la molécula <span class="arithmatex">\(\text{CO}\)</span> es <span class="arithmatex">\(0.113 \text{nm}\)</span>, la energía de disociación es de <span class="arithmatex">\(9.60 \text{eV}\)</span>, la frecuencia vibracional es de <span class="arithmatex">\(6.51 \times 10^{13} \text{Hz}\)</span>. A partir de estos datos experimentales, determinar los potenciales de Morse para la interacción entre el carbono y el oxígeno.</p>
+<p>La energía de disociación de una molécula diatómica es la energía necesaria para separar los átomos a una distancia infinita, es decir:</p>
+<div class="arithmatex">\[ 
+\Delta E = V(\infty) - V(R_0) = 0 - V(R_0) = A = 9.60 \text{eV}
+\]</div>
+<p>Hallemos ahora el parámetro <span class="arithmatex">\(a\)</span>. Derivamos el potencial de Morse:</p>
+<div class="arithmatex">\[ 
+V'(R) = A \left( -2a e^{-2a(R-R_0)} + 2ae^{-a(R-R_0)} \right) \qquad V''(R) = A \left( 4a^2 e^{-2a(R-R_0)} - 2a^2 e^{-a(R-R_0)} \right) 
+\]</div>
+<p>Es inmediato que <span class="arithmatex">\(V'(R_0) = 0\)</span>. Desarrollando a segundo orden alrededor de <span class="arithmatex">\(R_0\)</span>, podemos aproximar el potencial de Morse como un oscilador armónico:</p>
+<div class="arithmatex">\[ 
+V(R) \approx V(R_0) + \frac{1}{2} V''(R_0)(R - R_0)^2 \qquad k = \omega^2 \mu 
+\]</div>
+<p>En donde:</p>
+<div class="arithmatex">\[ 
+V(R_0) = -A \qquad k = V''(R_0) = A \left( 4a^2 e^{-2a(R_0-R_0)} - 2a^2 e^{-a(R_0-R_0)} \right) = 2Aa^2
+\]</div>
+<p>Reemplazando en <span class="arithmatex">\(k = \omega^2 \mu\)</span>:</p>
+<div class="arithmatex">\[ 
+\omega^2 \mu = 2\epsilon a^2 \Rightarrow a = \sqrt{\frac{\omega^2 \mu}{2\epsilon}} 
+\]</div>
+<p>En donde habíamos encontrado que <span class="arithmatex">\(A\)</span> es la energía de disociación. Reemplazando:
+- <span class="arithmatex">\(A = 9.60 \text{eV}\)</span>
+- <span class="arithmatex">\(\nu = \omega / 2\pi = 6.51 \times 10^{13} \text{Hz}\)</span></p>
+<p>Obtenemos finalmente que <span class="arithmatex">\(a = 2.49 \text{Å}^{-1}\)</span>.</p>
+<h2 id="reglas-de-transicion">Reglas de transición</h2>
+<h2 id="espectroscopia">Espectroscopía</h2>
+<p>La <strong>espectroscopía rotacional</strong> y la <strong>espectroscopía roto-vibracional</strong> son técnicas que analizan la interacción de la radiación electromagnética con moléculas en fase gaseosa, permitiendo estudiar sus propiedades estructurales y energéticas.  </p>
+<h3 id="espectroscopia-rotacional">Espectroscopía rotacional</h3>
+<p>La espectroscopía rotacional estudia la absorción o emisión de radiación electromagnética en la región del <strong>microondas</strong> (aproximadamente 0.1-10 mm, o entre 300 y 3 cm⁻¹ en número de onda). Se centra en las transiciones entre niveles de <strong>energía rotacional</strong>, proporcionando información sobre la estructura molecular y los momentos de inercia de las moléculas.  </p>
+<h4 id="procedimiento">Procedimiento:</h4>
+<ul>
+<li>Se obtiene una muestra gaseosa de la molécula de interés.  </li>
+<li>La muestra se introduce en una celda o cavidad resonante adecuada para la región de microondas.  </li>
+<li>Se irradia la muestra con una fuente de radiación de microondas.  </li>
+<li>Las moléculas absorben la radiación cuando la frecuencia de la onda coincide con la diferencia entre dos niveles rotacionales permitidos.  </li>
+<li>Esta absorción genera un <strong>espectro rotacional</strong> característico de la molécula.  </li>
+<li>Un <strong>espectrómetro de microondas</strong> dispersa y analiza la radiación transmitida o absorbida.  </li>
+<li>Un detector de microondas (como un diodo de Schottky o un detector de heterodino) mide la intensidad de la señal.  </li>
+<li>Se obtiene un gráfico de <strong>intensidad</strong> vs. <strong>frecuencia o número de onda (cm⁻¹)</strong>, donde se observan picos correspondientes a las transiciones rotacionales.  </li>
+</ul>
+<h3 id="espectroscopia-roto-vibracional">Espectroscopía roto-vibracional</h3>
+<p>La espectroscopía roto-vibracional estudia la absorción o emisión de radiación electromagnética en la región del <strong>infrarrojo medio</strong> (aproximadamente entre <span class="arithmatex">\(400\)</span> y <span class="arithmatex">\(4000\)</span> <span class="arithmatex">\(\text{cm}^{-1}\)</span> en número de onda). Este fenómeno ocurre cuando las moléculas experimentan transiciones simultáneas en sus estados de <strong>vibración</strong> y <strong>rotación</strong>.  </p>
+<h4 id="procedimiento_1">Procedimiento:</h4>
+<ul>
+<li>Se obtiene una muestra gaseosa de la molécula de interés.  </li>
+<li>La muestra se introduce en una celda transparente al infrarrojo.  </li>
+<li>Se irradia la muestra con una fuente de luz infrarroja o un láser de infrarrojo.  </li>
+<li>Las moléculas absorben la radiación, promoviendo transiciones roto-vibracionales.  </li>
+<li>El cambio en los estados energéticos de las moléculas genera un <strong>espectro característico</strong>.  </li>
+<li>La radiación transmitida se analiza mediante un <strong>espectrómetro de transformada de Fourier (FTIR)</strong> o un <strong>monocromador de rejilla</strong>.  </li>
+<li>Un detector infrarrojo (como un bolómetro o un detector de semiconductor) mide la intensidad de la luz absorbida.  </li>
+<li>Se obtiene un gráfico de <strong>intensidad</strong> vs. <strong>número de onda (cm⁻¹)</strong>, donde aparecen las líneas de absorción correspondientes a las transiciones roto-vibracionales.  </li>
+</ul>
+<h3 id="ejemplo">Ejemplo</h3>
+<h4 id="espectroscopia-rotacional-del-texthcl">Espectroscopia rotacional del <span class="arithmatex">\(\text{HCl}\)</span>.</h4>
+<p>La siguiente figura muestra un espectro de absorción de la molécula de <span class="arithmatex">\(\text{HCl}\)</span> en fase gaseosa, en función del numero de onda <span class="arithmatex">\(\bar{\nu} = \frac{1}{\lambda}\)</span>, siendo <span class="arithmatex">\(\lambda\)</span> la longitud de onda de la radiación electromagnética en <span class="arithmatex">\(\text{cm}\)</span>. </p>
+<p><img alt="Espectro del HCl" src="../../assets/20250304180344.png" /></p>
+<p>Consideremos que esta molécula está formada por los isótopos <span class="arithmatex">\(^1\text{H}\)</span> y <span class="arithmatex">\(^{35}\text{Cl}\)</span> con masas atómicas <span class="arithmatex">\(1.007825\text{u}\)</span> y <span class="arithmatex">\(34.968853\text{u}\)</span> respectivamente. Expliquemos el origen de estas líneas de absorción y la forma espectral de estas.</p>
+<p>Notemos que las líneas de absorción se encuentran en el rango de microondas del espectro. Este corresponde a un experimento de espectroscopia rotacional y mide los niveles absorbidos en transiciones rotacionales puras. </p>
+<p>La primera línea del espectro se encuentran en el numero de onda <span class="arithmatex">\(20\text{cm}^{-1}\)</span>, y pueden observarse 14 líneas, estando la ultima en aproximadamente en el numero de onda <span class="arithmatex">\(285 \text{cm}^{-1}\)</span>.  Esto nos dice que la separación entre líneas será de aproximadamente <span class="arithmatex">\(20\text{cm}^{-1} + \alpha\)</span>, en donde:</p>
+<div class="arithmatex">\[  
+20\text{cm}^{-1} + 13(20\text{cm}^{-1} + \alpha) = 285\text{cm}^{-1} \Rightarrow 
+\alpha = \frac{285\text{cm}^{-1} - 20\text{cm}^{-1}}{13} - 20\text{cm}^{-1} \approx 0.384 \text{cm}^{-1} 
+\]</div>
+<p>Luego, la separación entre líneas del espectro será de <span class="arithmatex">\(\Delta \bar{\nu} \approx 20.384 \text{cm}^{-1}\)</span>. Analicemos ahora las transiciones. Podemos aproximar las auto-energías de la molécula como:</p>
+<div class="arithmatex">\[ 
+E_{rot}^l \approx \frac{\hbar^2l(l+1)}{2\mu R_0^2} \qquad l=0,1,2,...
+\]</div>
+<p>Con <span class="arithmatex">\(\mu\)</span> la masa reducida del <span class="arithmatex">\(\text{HCl}\)</span> y <span class="arithmatex">\(R_0\)</span> al distancia inter-nuclear de equilibrio. En el espectro observado, cada línea corresponde, no a un nivel de energía, sino a una transición de energía con la regla de selección <span class="arithmatex">\(\Delta l = 1\)</span>. La posición de una línea en la posición <span class="arithmatex">\(l\)</span> corresponde a una absorción de energía <span class="arithmatex">\(\Delta E_{rot}^l\)</span> por parte del gas. Luego estas líneas estarán en las posiciones:</p>
+<div class="arithmatex">\[ 
+\Delta E^l_{rot} = E^{l+1}_{rot} - E^l_{rot}= \frac{\hbar^2}{2\mu R_0^2} \left[(l+1)(l+2) - l(l+1) \right] = \frac{\hbar^2}{\mu R_0^2}(l+1) \qquad l=0,1,2,...
+\]</div>
+<p>La separación entre dos líneas de absorción será entonces:</p>
+<div class="arithmatex">\[
+\Delta E_{rot}^{l+1} - \Delta E_{rot}^{l} = \frac{\hbar^2}{\mu R_0^2} = hc\Delta\bar{\nu} = 2 \pi \hbar c\Delta\bar{\nu}
+\]</div>
+<p>Hallamos la separación inter-nuclear <span class="arithmatex">\(R_0\)</span> como:</p>
+<div class="arithmatex">\[ 
+R_0 = \sqrt{\frac{\hbar}{2\pi\mu c\Delta\bar{\nu}}} \qquad \mu = \frac{1}{\frac{1}{m_\text{H}} + \frac{1}{m_{\text{Cl}}}} = 0.973 \text{u}
+\]</div>
+<p>Luego, la distancia inter-nuclear de equilibrio de la molécula de <span class="arithmatex">\(\text{HCl}\)</span> será <span class="arithmatex">\(R_0 = 1.3 \text{Å}\)</span> según los datos.  </p>
+<h3 id="ejemplo_1">Ejemplo</h3>
+<p>La figura muestra un espectro de absorción de la molécula de bromuro de hidrógeno <span class="arithmatex">\(\text{HBr}\)</span> en fase gaseosa, en función del número de onda <span class="arithmatex">\(\bar{\nu} = \frac{1}{\lambda}\)</span>, siendo <span class="arithmatex">\(\lambda\)</span> la longitud de onda de la radiación electromagnética expresada en <span class="arithmatex">\(\text{cm}\)</span>.</p>
+<p><img alt="Espectroscopia rotovibracional" src="../../assets/20250304180833.png" /></p>
+<p>Las masas atómicas de los elementos bromo e hidrógeno son <span class="arithmatex">\(m_{\text{Br}} = 79.909 \, \text{u}\)</span> y <span class="arithmatex">\(m_{\text{H}} = 1.00784 \, \text{u}\)</span>, respectivamente.</p>
+<ul>
+<li>Explicaremos la forma espectral medida en relación a la posición de las líneas de absorción observadas. Realizar un diagrama indicando las transiciones entre los niveles de energía correspondientes para las líneas espectrales comprendidas entre <span class="arithmatex">\(2510\text{cm}^{-1}\)</span> y <span class="arithmatex">\(2610\text{cm}^{-1}\)</span>.</li>
+<li>Estimaremos la separación inter-nuclear de la molécula <span class="arithmatex">\(\text{HBr}\)</span> en su estado fundamental.</li>
+<li>Estimaremos la energía de punto cero de la molécula <span class="arithmatex">\(\text{HBr}\)</span>.</li>
+</ul>
+<div class="arithmatex">\[
+E^{v,l} = V(R_0 ) + \hbar \omega(v + \frac{1}{2}) + \frac{\hbar^2l(l+1)}{2\mu R_0^2} \quad v=0,1,2 ... \quad l = 0,1,2 ...
+\]</div>
+<div class="arithmatex">\[ 
+\Delta E_R^{v, l} = E^{v+1, l+1} - E^{v,l} = \hbar\omega + \frac{\hbar^2}{\mu R_0^2}(l+1) \qquad l=0, 1, ...
+\]</div>
+<div class="arithmatex">\[ 
+\Delta E^{v, l}_P = E^{v+1, l-1} - E^{v,l} = \hbar \omega - \frac{\hbar^2}{\mu R_0^2} l \qquad l= 1, 2, 3, ...
+\]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

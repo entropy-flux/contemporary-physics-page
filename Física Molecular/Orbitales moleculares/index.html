@@ -1,0 +1,795 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../La%20mol%C3%A9cula%20de%20hidrogeno/">
+      
+      
+        <link rel="next" href="../../F%C3%ADsica%20N%C3%BAclear/Desintegraci%C3%B3n%20alfa/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Orbitales moleculares - Física Contemporánea</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ejemplo-molecula-de-textlif" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Física Contemporánea" class="md-header__button md-logo" aria-label="Física Contemporánea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Física Contemporánea
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Orbitales moleculares
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Física Contemporánea" class="md-nav__button md-logo" aria-label="Física Contemporánea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Física Contemporánea
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Física Molecular
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Física Molecular
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../El%20enlace%20i%C3%B3nico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    El enlace iónico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Espectros%20rotacionales%20y%20vibracionales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Espectros rotacionales y vibracionales
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Interacci%C3%B3n%20de%20Van%20Der%20Wals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interacción de Van Der Wals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../La%20mol%C3%A9cula%20de%20hidrogeno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    La molécula de hidrogeno
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Orbitales moleculares
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Orbitales moleculares
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-molecula-de-textlif" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo: Molécula de \(\text{LiF}\)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Física Núclear
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Física Núclear
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F%C3%ADsica%20N%C3%BAclear/Desintegraci%C3%B3n%20alfa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Desintegración alfa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F%C3%ADsica%20N%C3%BAclear/Desintegraci%C3%B3n%20beta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Desintegración beta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F%C3%ADsica%20N%C3%BAclear/Estructura%20nuclear/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estructura nuclear
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Física de Partículas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Física de Partículas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F%C3%ADsica%20de%20Part%C3%ADculas/Aniquilaci%C3%B3n%20Electr%C3%B3n-Positr%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aniquilación Electrón Positrón
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F%C3%ADsica%20de%20Part%C3%ADculas/Dispersi%C3%B3n%20Electr%C3%B3n-Mu%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dispersión Electrón Muón
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-molecula-de-textlif" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo: Molécula de \(\text{LiF}\)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Orbitales moleculares</h1>
+
+<p>Si bien el enlace covalente en moléculas diferentes al <span class="arithmatex">\(\text{H}_2\)</span>, tanto diatómicas como poliatómicas es mas complicado, es posible estudiarlo gracias a que cualquier alteración en la estructura electrónica de un átomo debido a la proximidad de otro esta limitada a la capa externa. </p>
+<p>Para estudiar la estructura molecular se puede recurrir al <em>método de los orbitales moleculares</em> que describiremos a continuación. En lugar de comenzar con átomos definidos partimos de una configuración en la que los núcleos se encuentran en sus respectivas posiciones de equilibrio y se analiza el efecto de ir agregando los electrones a estos.</p>
+<p>Así como los electrones de un átomo tienen orbitales definidos por los números cuánticos <span class="arithmatex">\(n, l, m\)</span> y ocupan los niveles de energía mas bajos de acuerdo a las reglas de Hund, las moléculas tienen <em>orbitales moleculares</em> y números cuánticos definidos. </p>
+<p>Los estados electrónicos moleculares pueden ser expresados como combinaciones lineales de orbitales moleculares, luego para determinar su configuración electrónica, se puede asignar cada electrón a un orbital molecular</p>
+<p>Podemos expresar el estado electrónico <span class="arithmatex">\(\ket{\psi_e}\)</span> de una molécula en términos de sus orbitales moleculares <span class="arithmatex">\(\ket{\psi}\)</span>:</p>
+<div class="arithmatex">\[ 
+\ket{\psi_e} = \sum_r \psi_r \ket{\psi_r}
+\]</div>
+<p>Los cuales a su vez se pueden escribir como una combinación de orbitales atómicos <span class="arithmatex">\(\ket{\phi}\)</span>, es decir: </p>
+<div class="arithmatex">\[
+\quad \ket{\psi_r} = \sum_{i}\phi_{ri} \ket{\phi_{ri}} 
+\]</div>
+<p>Luego los orbitales moleculares se llenan con electrones de teniendo en cuenta el principio de exclusión de Pauli.  Volvamos al caso del ion de hidrogeno. Habíamos encontrado que podíamos aproximar sus orbitales como:</p>
+<div class="arithmatex">\[
+\ket{\psi_+} \sim \ket{\phi_a} + \ket{\phi_b} \qquad \ket{\psi_-} \sim \ket{\phi_a} - \ket{\phi_b}
+\]</div>
+<p>En el átomo de hidrogeno, los electrones tienen un momento angular orbital <span class="arithmatex">\(\vec{L}\)</span> y sus funciones son autoestados de los operadores <span class="arithmatex">\(\hat{L}^2\)</span> y <span class="arithmatex">\(\hat{L}_z\)</span>.</p>
+<p>Debido a la simetría cilíndrica de la molécula, se puede afirmar que la funciones de onda <span class="arithmatex">\(\ket{\psi_{+}}\)</span> sigue siendo auto-estado del operador <span class="arithmatex">\(\hat{L}_z\)</span> ya que esta es una combinación lineal de los orbitales atómicos del átomo de hidrogeno. </p>
+<p>Dada entonces las auto-energías <span class="arithmatex">\(\hbar m\)</span> del operador <span class="arithmatex">\(\hat{L}_z\)</span>, con <span class="arithmatex">\(m = 0, \pm 1, \pm 2 ...\)</span> denotamos los orbitales de sus correspondientes auto-estados como <span class="arithmatex">\(\sigma, \pi, \delta,...\)</span>. Llenando entonces el orbital <span class="arithmatex">\(\sigma_{1s}\)</span> del ion <span class="arithmatex">\(\text{H}_2^+\)</span> se obtiene su estado fundamental. </p>
+<p>Se puede generalizar este esquema para tratar la molécula de <span class="arithmatex">\(\text{H}_2\)</span>. A partir de los orbitales moleculares construidos para el <span class="arithmatex">\(\text{H}_2^+\)</span> se pueden construir dos esquemas:</p>
+<p><img alt="Orbitales del hidrogeno" src="../../assets/20250318060913.png" /></p>
+<p>El primero corresponde a dos electrones en estado ligante <span class="arithmatex">\(\sigma_{1s}\)</span> y el segundo a electrones en estado anti-ligante <span class="arithmatex">\(\sigma^*_{1s}\)</span> y corresponde a un <em>orbital de anti-enlace</em>. En el primer caso, cada electrón, podemos escribir su función de onda como:</p>
+<div class="arithmatex">\[ 
+\ket{\psi^{(1)}} \sim c_1\ket{\phi^{(1)}_a} + c_2\ket{\phi^{(1)}_b} \qquad 
+\ket{\psi^{(2)}} \sim c_1\ket{\phi^{(2)}_a} + c_2\ket{\phi^{(2)}_b}
+\]</div>
+<p>Luego la función de onda electronica de la molécula será:</p>
+<div class="arithmatex">\[ 
+\ket{\psi_e} \sim c_1^2 \ket{\phi_a, \phi_a} + c_2^2 \ket{\phi_b, \phi_b} + c_1c_2(\ket{\phi_a, \phi_b} + \ket{\phi_b, \phi_a})
+\]</div>
+<p>Si se compara con la función de onda obtenida bajo la aproximación de Heitler-London:</p>
+<div class="arithmatex">\[
+\ket{\psi_S} \sim \ket{\phi_a, \phi_b} + \ket{\phi_b, \phi_a}
+\]</div>
+<p>Vemos que esta ultima desprecia los términos iónicos <span class="arithmatex">\(\ket{\phi_a, \phi_a}\)</span> y <span class="arithmatex">\(\ket{\phi_b, \phi_b}\)</span> para los cuales los electrones se encuentran ambos en las proximidades de uno u otro núcleo. En la practica la aproximación de Heitler-London tiende a subestimar el peso de la interacción iónica, mientras que el método de los orbitales moleculares tiende a sobreestimarlo. </p>
+<h3 id="ejemplo-molecula-de-textlif">Ejemplo: Molécula de <span class="arithmatex">\(\text{LiF}\)</span></h3>
+<p>Veamos un ejemplo. La función de onda que describe el orbital ligante de la molécula de <span class="arithmatex">\(\text{LiF}\)</span> puede expresarse de la siguiente forma:</p>
+<div class="arithmatex">\[ 
+\ket{\psi} = [\frac{A}{\sqrt{2}}(\ket{\phi_{2s}, \phi_{2p_z}} + \ket{\phi_{2p_z} ,\phi_{2s}})+ B\ket{\phi_{2s},\phi_{2s}} + C\ket{\phi_{2_{p_z}},\phi_{2_{p_z}}}] \ket{\chi_S}
+\]</div>
+<p>En donde los orbitales atómicos <span class="arithmatex">\(\phi_{2s}\)</span> y <span class="arithmatex">\(\phi_{2p_z}\)</span> corresponden a los átomos <span class="arithmatex">\(\text{Li}\)</span> y <span class="arithmatex">\(\text{F}\)</span>, respectivamente. Verifiquemos que <span class="arithmatex">\(\ket{\psi}\)</span> esta normalizada si <span class="arithmatex">\(A^2 + B^2 + C^2 = 1\)</span>. Escribamos los orbitales atómicos que intervienen en la función de onda propuesta.  </p>
+<div class="arithmatex">\[ 
+\langle \psi \ket {\psi} = \frac{A^2}{2} [2 \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{1s},\phi_{2p_z}} + 2\langle \phi_{2p_z},\phi_{1s}\ket{\phi_{1s},\phi_{2p_z}}]
+\]</div>
+<div class="arithmatex">\[
+B^2 \langle{\phi_{2s},\phi_{2s}} \ket{\phi_{2s},\phi_{2s}} +C^2 \langle \phi_{2_{p_z}},\phi_{2_{p_z}} \ket{\phi_{2_{p_z}},\phi_{2_{p_z}}} +
+\frac{AB}{\sqrt{2}} \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{2s},\phi_{2s}} + \frac{AB}{\sqrt{2}} \langle \phi_{2p_z},\phi_{1s}\ket{\phi_{2s},\phi_{2s}}
+\]</div>
+<div class="arithmatex">\[
+\frac{AC}{\sqrt{2}} \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{2p_z},\phi_{2p_z}} + \frac{AC}{\sqrt{2}} \langle \phi_{2p_z},\phi_{1s}\ket{\phi_{2p_z},\phi_{2p_z}}
++
+BC \langle{\phi_{2_{p_z}}, \phi_{2_{p_z}}} \ket{\phi_{2s},\phi_{2s}} + CB \langle \phi_{2s},\phi_{2s} \ket{\phi_{2_{p_z}}, \phi_{2_{p_z}}}
+\]</div>
+<p>En donde los orbitales atómicos se pueden escribir como:</p>
+<div class="arithmatex">\[
+\phi_{1s}(\vec{r}) = R_{10}(r)Y_0^0 = \frac{1}{\sqrt{\pi a_0^3}} e^{-r/a_0}
+\]</div>
+<div class="arithmatex">\[ 
+\phi_{2s}(\vec{r}) = R_{20}(r) Y_0^0(\theta, \phi) =  \frac{1}{\sqrt{\pi}}\left( \frac{1}{2a_0} \right)^{3/2} \left(1 - \frac{r}{2a_0}\right) e^{-r/2a_0}
+\]</div>
+<div class="arithmatex">\[ 
+\phi_{2p_z}(\vec{r}) = R_{21}(r) Y_1^0(\theta, \phi) = \sqrt{\frac{1}{4\pi}} \left( \frac{1}{3a_0} \right)^{3/2} \frac{r}{a_0} e^{-r/2a_0} \cos\theta
+\]</div>
+<p>En la expresión de <span class="arithmatex">\(\ket{\psi}\)</span> podemos ver que hay términos cruzados que contienen un solo orbital <span class="arithmatex">\(\phi_{p_z}\)</span> y se anulan ya que van como <span class="arithmatex">\(\sim \int \cos \theta d\Omega = 0\)</span> de modo que:</p>
+<div class="arithmatex">\[ 
+\langle\psi\ket{\psi} = A^2 \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{1s},\phi_{2p_z}} +  
+B^2 \langle{\phi_{2s},\phi_{2s}} \ket{\phi_{2s},\phi_{2s}} +C^2 \langle \phi_{2_{p_z}},\phi_{2_{p_z}} \ket{\phi_{2_{p_z}},\phi_{2_{p_z}}}
+\]</div>
+<p>Como los orbitales atómicos del átomo de hidrogeno son ortogonales vemos que:</p>
+<div class="arithmatex">\[ 
+|\psi(\vec{r})|^2 = A^2 + B^2+C^2 = 1
+\]</div>
+<p>Y la función de onda esta normalizada cuando <span class="arithmatex">\(A^2 + B^2+C^2 = 1\)</span>. El primer termino en la función de onda propuesta es la contribución covalente, que involucra al electrón externo del <span class="arithmatex">\(\text{Li}\)</span> y un electrón en el orbital correspondiente a <span class="arithmatex">\(p_z\)</span> de la capa externa del <span class="arithmatex">\(\text{F}\)</span>. </p>
+<p>Se sabe que el término proporcional <span class="arithmatex">\(B\)</span> es muy pequeño comparado con la otra contribución iónica, es decir el término proporcional a <span class="arithmatex">\(C\)</span>. Debido a que la probabilidad de que los dos electrones se encuentren en las proximidades del átomo de litio es muy baja. Esto se debe a la baja afinidad electrónica del <span class="arithmatex">\(\text{Li}\)</span>, mientras que la energía de ionización del <span class="arithmatex">\(\text{F}\)</span> es alta, por lo que se puede asumir <span class="arithmatex">\(B \approx 0\)</span>. En esta aproximación el momento dipolar de la molécula es <span class="arithmatex">\(p = C^2 e R_0\)</span> en donde <span class="arithmatex">\(R_0\)</span> es la separación de equilibrio entre los átomos.</p>
+<p>Un valor experimental medido del momento dipolar <span class="arithmatex">\(p\)</span> de la molécula de <span class="arithmatex">\(\text{LiF}\)</span> es <span class="arithmatex">\(p=0.85eR\)</span> siendo <span class="arithmatex">\(R\)</span> la separación de equilibrio entre el <span class="arithmatex">\(\text{Li}\)</span> y el <span class="arithmatex">\(\text{F}\)</span>. Entonces <span class="arithmatex">\(C \approx 0.9\)</span> y <span class="arithmatex">\(A \approx 0.4\)</span>. Luego el carácter iónico de la molécula de <span class="arithmatex">\(\text{LiF}\)</span> es predominante, con una pequeña contribución covalente y podemos escribir su función de onda electronica como:</p>
+<div class="arithmatex">\[ 
+\ket{\psi} \approx  [0.113(\ket{\phi_{2s}, \phi_{2p_z}} + \ket{\phi_{2p_z} ,\phi_{2s}}) + 0.9\ket{\phi_{2_{p_z}},\phi_{2_{p_z}}}] \ket{\chi_S}
+\]</div>
+<p>La cual esta normalizada ya que <span class="arithmatex">\(0.4^2 + 0.9^2 \approx 1\)</span>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
