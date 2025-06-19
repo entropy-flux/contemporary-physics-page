@@ -593,6 +593,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ejemplo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -688,6 +697,29 @@
   
   <span class="md-ellipsis">
     Dispersión Electrón Muón
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F%C3%ADsica%20de%20Part%C3%ADculas/Ecuaci%C3%B3n%20de%20Dirac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ecuación de Dirac
     
   </span>
   
@@ -806,6 +838,15 @@
         
           <li class="md-nav__item">
   <a href="#ejemplo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo_3" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplo
     </span>
@@ -1027,9 +1068,41 @@ N_{235}(t) \exp(\lambda_{235}t)
 (\lambda_{235} - \lambda_{238}) t = (\frac{\log2}{\tau_{235}} - \frac{\log2}{\tau_{238}})   t =  \log(137.875) 
 \]</div>
 <div class="arithmatex">\[
-t = \frac{\log(135.875)}{\frac{1}{7.04 \times10^8} - \frac{1}{44.68 \times10^8}} \text{años} = 4.104 \times 10^9 \text{años}
+t = \frac{\log(137.875) / \log(2)}{\frac{1}{7.04 \times10^8} - \frac{1}{44.68 \times10^8}} \text{años} \approx 4 \times 10^9 \text{años}
 \]</div>
-<p>Un valor muy cercano al conocido de 4.543 miles de millones de años. </p>
+<p>Un valor del mismo orden de la edad conocida de la tierra de 4.543 miles de millones de años. </p>
+<hr />
+<h4 id="ejemplo_3">Ejemplo</h4>
+<p>La razón másica entre el radioisótopo <span class="arithmatex">\(^{14}\text{C}\)</span> y el <span class="arithmatex">\(^{12}C\)</span> es de <span class="arithmatex">\(1.5 \times 10^{-12}\)</span>, por otra parte en una muestra de carbón de <span class="arithmatex">\(64 \text{g}\)</span> se observan <span class="arithmatex">\(2\)</span> desintegraciones por segundo. Hallemos la edad de la muestra considerando que la vida media del <span class="arithmatex">\(^{14}\text{C}\)</span> es de <span class="arithmatex">\(5700\)</span> años. </p>
+<p>Primero hallemos el numero de desintegraciones por segundo de <span class="arithmatex">\(1 \text{g}\)</span> de materia viva. La actividad de esta dada por:</p>
+<div class="arithmatex">\[
+A = \lambda_{14} N_{14} = \frac{\log2}{\tau_{14}} N_{14}
+\]</div>
+<p>En donde <span class="arithmatex">\(N_{14}\)</span> corresponde a la cantidad de núcleos de <span class="arithmatex">\(^{14}\text{C}\)</span> de la muestra. En <span class="arithmatex">\(1\text{g}\)</span> de materia </p>
+<div class="arithmatex">\[
+1\text{g} = m_{12} + m_{14} = m_{14}(\frac{m_{12}}{m_{14}} + 1) = m_{14}(\frac{1}{\eta} +1)
+\]</div>
+<p>Con <span class="arithmatex">\(\eta\)</span> la relación másica entre el <span class="arithmatex">\(^{14}\text{C}\)</span> y el <span class="arithmatex">\(^{12}\text{C}\)</span> conocida. Podemos ahora usar la masa molar del <span class="arithmatex">\(^{14}\text{C}\)</span> y el numero de Avogadro para hallar el numero de núcleos <span class="arithmatex">\(N_{14}\)</span> de la muestra.</p>
+<div class="arithmatex">\[
+N_{14} = N_{A} \frac{1\text{g}}{(\frac{1}{\eta} + 1)} \frac{1}{14\text{g}/\text{mol}} = 6.45 \times 10^{9} 
+\]</div>
+<p>Teniendo en cuenta la vida media del carbono-14 de unos <span class="arithmatex">\(1.7 \times 10^{11} \text{s}\)</span> aproximadamente, hallamos la actividad como:</p>
+<div class="arithmatex">\[
+A = 0.25 \text{s}^{-1}
+\]</div>
+<p>El hecho de que la muestra sea de materia viva, implica que la cantidad de es igual a la de la atmosfera, puesto a que el proceso de fotosíntesis incorpora el átomo radiactivo en los organismos autótrofos, y estos son consumidos luego por los heterótrofos.</p>
+<p>Se tiene ahora que la actividad de la muestra de carbón <span class="arithmatex">\(64\text{g}\)</span> es de <span class="arithmatex">\(2\)</span> desintegraciones por segundo, una actividad menor a la obtenida en el resultado anterior, es decir al transcurrir el tiempo una fracción de los núcleos de <span class="arithmatex">\(^{14} \text{C}\)</span> se desintegraron y la actividad disminuyo con respecto a la de la materia viva.</p>
+<p>Luego si se toma la relación másica de núcleos de <span class="arithmatex">\(^{14} \text{C}\)</span> en la muestra de carbón igual a la de la materia viva en <span class="arithmatex">\(t=0\)</span> usando la ley de desintegración exponencial:</p>
+<div class="arithmatex">\[
+N_{14}(t) = N_{14}(0) \exp(-\frac{\log2}{\tau_{14}} t)
+\Rightarrow 
+t = \tau_{14} \frac{\log(\frac{N_{14}(0)}{N_{14}(t)})}{\log2}
+\]</div>
+<p>En donde la relación entre poblaciones puede hallarse directamente como:</p>
+<div class="arithmatex">\[
+\frac{N_{14}(0)}{N_{14}(t)} = \frac{m_{14}(0)}{m_{14}(t)} = \frac{A(0)}{A(t)} \approx \frac{(0.25)}{2/64} = 2^3
+\]</div>
+<p>Al tomar logaritmos, bajar el exponente y dividir por <span class="arithmatex">\(\log2\)</span> los logaritmos se cancelan, luego la edad de la muestra será simplemente <span class="arithmatex">\(5700 * 3 = 17100\)</span> años.  </p>
 <hr />
 
 
