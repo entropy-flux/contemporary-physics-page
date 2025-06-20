@@ -1,0 +1,1129 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../3.1%20Simetr%C3%ADas/">
+      
+      
+        <link rel="next" href="../3.3%20Fotones/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>3.2 Fermiones - Física Contemporánea</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#evolucion-temporal" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Física Contemporánea" class="md-header__button md-logo" aria-label="Física Contemporánea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Física Contemporánea
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3.2 Fermiones
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Física Contemporánea" class="md-nav__button md-logo" aria-label="Física Contemporánea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Física Contemporánea
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    1. Física Molecular
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1. Física Molecular
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20F%C3%ADsica%20Molecular/1.1%20La%20mol%C3%A9cula%20de%20hidrogeno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.1 La molécula de hidrogeno
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20F%C3%ADsica%20Molecular/1.2%20Orbitales%20moleculares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.2 Orbitales moleculares
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20F%C3%ADsica%20Molecular/1.3%20El%20enlace%20i%C3%B3nico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.3 El enlace iónico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20F%C3%ADsica%20Molecular/1.4%20Interacci%C3%B3n%20de%20Van%20Der%20Wals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.4 Interacción de Van Der Wals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20F%C3%ADsica%20Molecular/1.5%20Espectros%20rotacionales%20y%20vibracionales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.5 Espectros rotacionales y vibracionales
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2. Física Núclear
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. Física Núclear
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.%20F%C3%ADsica%20N%C3%BAclear/2.1%20Estructura%20nuclear/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.1 Estructura nuclear
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.%20F%C3%ADsica%20N%C3%BAclear/2.2%20Procesos%20nucleares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.2 Procesos nucleares
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.%20F%C3%ADsica%20N%C3%BAclear/2.3%20Desintegraci%C3%B3n%20alfa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3 Desintegración alfa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.%20F%C3%ADsica%20N%C3%BAclear/2.4%20Desintegraci%C3%B3n%20beta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.4 Desintegración beta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    3. Física de Partículas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3. Física de Partículas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.1%20Simetr%C3%ADas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.1 Simetrías
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    3.2 Fermiones
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.2 Fermiones
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#evolucion-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evolución temporal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ondas-planas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ondas planas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#espin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espín
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conjugados-de-carga" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conjugados de carga
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.3%20Fotones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.3 Fotones
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4.1%20Dispersi%C3%B3n%20Electr%C3%B3n-Mu%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.4.1 Dispersión Electrón Muón
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4.2%20Dispersi%C3%B3n%20de%20Compton/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.4.2 Dispersión de Compton
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4.3%20Aniquilaci%C3%B3n%20Electr%C3%B3n-Positr%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.4.3 Aniquilación Electrón Positrón
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#evolucion-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evolución temporal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ondas-planas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ondas planas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#espin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espín
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conjugados-de-carga" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conjugados de carga
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>3.2 Fermiones</h1>
+
+<p>La ecuación de Dirac, es una ecuación de primer orden que describe partículas de spin <span class="arithmatex">\(1/2\)</span>. Esta es consistente con los principios de la mecánica cuántica y relatividad y es esencial para construir el modelo estándar.</p>
+<p>Supongamos una partícula de masa <span class="arithmatex">\(m\)</span> y un <span class="arithmatex">\(4\)</span>-momento <span class="arithmatex">\(p\)</span>. La relación de dispersión relativista establece que:</p>
+<div class="arithmatex">\[
+(p\cdot p) = (mc)^2 \Rightarrow p^{\mu}p_{\mu} - (mc)^2 = 0
+\]</div>
+<p>En el contexto cuántico, el momento se representa mediante operadores diferenciales, es decir:</p>
+<div class="arithmatex">\[
+p_{\mu} \rightarrow -i\hbar \partial_{\mu}
+\]</div>
+<p>Proponemos coeficientes <span class="arithmatex">\(\gamma^{\mu}\)</span> para factorizar la ecuación y expresarla en términos de las componentes covariantes del momento, es decir:</p>
+<div class="arithmatex">\[
+p^{\mu} p_{\mu} - (mc)^2 = (\gamma^{\mu} p_{\mu} - mc)(\gamma^{\nu} p_{\nu} + mc) = 0
+\]</div>
+<p>Para que esta factorización sea válida, los coeficientes <span class="arithmatex">\(\gamma^{\mu}\)</span> deben ser matrices y verificar la relación:</p>
+<div class="arithmatex">\[
+\{\gamma^{\mu}, \gamma^{\nu}\} = \gamma^{\mu} \gamma^{\nu} + \gamma^{\nu} \gamma^{\mu} = 2g^{\mu \nu} I
+\]</div>
+<p>Con <span class="arithmatex">\(g\)</span> el tensor métrico de Minkowski. Esta ultima relación se denomina relación de anti conmutación de Clifford y puede demostrarse que las matrices que satisfacen esta relación son:</p>
+<div class="arithmatex">\[ \gamma^{0} = \begin{pmatrix} \hat{\mathbb{I}} &amp; 0 \\ 0 &amp; -\hat{\mathbb{I}} \end{pmatrix} \qquad \gamma^{\mu} = \begin{pmatrix} 0 &amp; \hat{\sigma}_{\mu} \\ \hat{\sigma}_{\mu} &amp; 0 \ \end{pmatrix} \]</div>
+<p>Con <span class="arithmatex">\(\hat{\sigma}_{\mu}\)</span> las matrices de Pauli:</p>
+<div class="arithmatex">\[
+\hat{\sigma}_1 = 
+\begin{pmatrix}
+0 &amp; 1 \\
+1 &amp; 0
+\end{pmatrix} \quad
+\hat{\sigma}_2 = 
+\begin{pmatrix}
+0 &amp; -i \\
+i &amp; 0
+\end{pmatrix} \quad
+\hat{\sigma}_3 = 
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{pmatrix}
+\]</div>
+<p>Las funciones de onda que transforma esta ecuación deben ser vectores de cuatro componentes, llamados <strong>espinores de Dirac</strong> y los escribimos como:</p>
+<div class="arithmatex">\[
+\psi = \begin{pmatrix} \psi^0 \\ \psi^1 \\ \psi^2 \\ \psi^3 \end{pmatrix}
+\]</div>
+<p>Entonces, al aplicar esta factorización sobre un espinor <span class="arithmatex">\(\psi\)</span> y tomar uno de los factores como nulo, se obtiene la ecuación de Dirac:</p>
+<div class="arithmatex">\[
+i\gamma^{\mu} \partial_{\mu} \psi -mc \psi = 0
+\]</div>
+<h3 id="evolucion-temporal">Evolución temporal</h3>
+<p>Ignoremos por un momento las componentes espaciales y veamos la componente <span class="arithmatex">\(0\)</span> correspondiente a la componente temporal de los <span class="arithmatex">\(4\)</span>-vectores, es decir:</p>
+<div class="arithmatex">\[
+i\hbar \gamma^0 \frac{1}{c} \frac{\partial}{\partial t} \psi - mc \psi = 0
+\]</div>
+<p>El espinor que puede dividirse en dos componentes <span class="arithmatex">\(\psi = \begin{pmatrix} \psi_A \ \psi_B \end{pmatrix}\)</span> , de forma que:</p>
+<div class="arithmatex">\[
+i\hbar \begin{pmatrix} \mathbb{\hat{I}} &amp; 0 \\ 0 &amp; -\mathbb{\hat{I}} \end{pmatrix} \begin{pmatrix} \psi_A \\ \psi_B \end{pmatrix} -mc \begin{pmatrix} \psi_A \\ \psi_B \end{pmatrix} = 0
+\]</div>
+<p>Luego la ecuación diferencial matricial <span class="arithmatex">\(4\times 4\)</span> se reduce a dos ecuaciones diferenciales <span class="arithmatex">\(2\times 2\)</span> dadas por:</p>
+<div class="arithmatex">\[ 
+\frac{\partial}{\partial t} \psi_A = -i\frac{mc^2}{\hbar} \psi_A \qquad \frac{\partial}{\partial t} \psi_B = i\frac{mc^2}{\hbar} \psi_B 
+\]</div>
+<p>Resolviendo ambos ecuaciones encontramos que las componentes del espinor evolucionan como:</p>
+<div class="arithmatex">\[ 
+\psi_A \sim \exp{(-i\frac{mc^2}{\hbar}t)} \qquad \psi_B \sim \exp{(i\frac{mc^2}{\hbar}t)}
+\]</div>
+<p>Dado a que el factor <span class="arithmatex">\(mc^2\)</span> es la energía en reposo de la partícula, la función de onda evoluciona como <span class="arithmatex">\(\psi_A \sim \exp{(-iE /\hbar t})\)</span>, lo cual implica propagación hacia el futuro en el tiempo y no implica ninguna inconsistencia, sin embargo, la ecuación de Dirac también admite soluciones de la forma
+<span class="arithmatex">\(\psi_B \sim \exp{(iE/\hbar t)}\)</span>, las cuales a primera instancia parecerían una violación de la causalidad. Estas soluciones en realidad corresponden a las <em>anti-partículas</em>, las cuales son las mismas partículas pero con carga opuestas, y pueden interpretarse en la electrodinámica cuántica como una antipartícula con energía positiva propagándose en la dirección opuesta en el espacio-tiempo</p>
+<h3 id="ondas-planas">Ondas planas</h3>
+<p>Supongamos ahora soluciones en forma de ondas planas, es decir:</p>
+<div class="arithmatex">\[
+\psi(x) = u(k) ae^{-ik\cdot x}
+\]</div>
+<p>Luego la ecuación de Dirac se reduce a:</p>
+<div class="arithmatex">\[
+(\hbar \gamma^{\mu} k_{\mu} - mc)u(k) = 0
+\]</div>
+<p>Notemos que la suma <span class="arithmatex">\(\gamma^{\mu} k_{\mu}\)</span> puede escribirse como:</p>
+<div class="arithmatex">\[ 
+\gamma^{\mu} k_{\mu} = \gamma^0k_0 - \vec{\gamma}\cdot\vec{k} 
+= k^0 \begin{pmatrix} \hat{\mathbb{I}} &amp; 0 \\ 0 &amp; -\hat{\mathbb{I}} \end{pmatrix} - \vec{k} \cdot \begin{pmatrix} 0 &amp; \vec{\sigma} \\ -\vec{\sigma} &amp; 0 \end{pmatrix} 
+= \begin{pmatrix} k^0\hat{\mathbb{I}} &amp; -\vec{k} \cdot \vec{\sigma} \\ \vec{k} \cdot \vec{\sigma} &amp; -k^0\hat{\mathbb{I}} \end{pmatrix} 
+\]</div>
+<p>Reemplazando en la ecuación de ondas planas, podemos escribir esta de forma matricial como:</p>
+<div class="arithmatex">\[ 
+\begin{pmatrix} \hat{\mathbb{I}}(\hbar k^0 - mc) &amp; -\hbar \vec{k} \cdot \vec{\sigma} \\ \hbar \vec{k} \cdot \vec{\sigma} &amp; -\hat{\mathbb{I}}(\hbar k^0 + mc) \end{pmatrix} \begin{pmatrix} u_A \\ u_B\end{pmatrix} = 0 
+\]</div>
+<p>En donde las componentes <span class="arithmatex">\(u_A\)</span> y <span class="arithmatex">\(u_B\)</span> corresponden a la partícula y la anti-partícula respectivamente. Resolviendo obtenemos:</p>
+<div class="arithmatex">\[
+u_A = \frac{\vec{k} \cdot \vec{\sigma}}{k^0 - mc/\hbar} u_B 
+\qquad
+u_B = \frac{\vec{k} \cdot \vec{\sigma}}{k^0 + mc/ \hbar} u_A
+\]</div>
+<div class="arithmatex">\[
+\vec{k} \cdot \vec{\sigma} 
+= k_x \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0\end{pmatrix}
++ k_y \begin{pmatrix} 0 &amp; -i \\ i &amp; 0\end{pmatrix}
++ k_z \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}
+= \begin{pmatrix} k_z &amp; k_x -ik_y \\ k_x + ik_y &amp; -k_z \end{pmatrix}
+\]</div>
+<p>Se torna útil también hallar el cuadrado del producto anterior, ya que:</p>
+<div class="arithmatex">\[
+(\vec{k} \cdot \vec{\sigma})^2 =  \begin{pmatrix} k_z &amp; k_x -ik_y \\ k_x + ik_y &amp; -k_z \end{pmatrix} \begin{pmatrix} k_z &amp; k_x -ik_y \\ k_x + ik_y &amp; -k_z \end{pmatrix} = \begin{pmatrix} |\vec{k}|^2 &amp; 0 \\ 0 &amp;  |\vec{k}|^2 \end{pmatrix} =  |\vec{k}|^2 \mathbb{\hat{I}}
+\]</div>
+<p>Usando estas expresiones podemos probar que <span class="arithmatex">\(\hbar \vec{k}\)</span> es en realidad el <span class="arithmatex">\(4\)</span>-momento de la onda. Reemplazando <span class="arithmatex">\(u_B\)</span> en <span class="arithmatex">\(u_A\)</span> obtenemos que:</p>
+<div class="arithmatex">\[
+u_A = \frac{|\vec{k}|^2}{(k^0)^2 - (mc/\hbar)^2} u_A 
+\Rightarrow 
+(k^0)^2 - |\vec{k}|^2 = k\cdot k  = (mc)^2 /\hbar^2
+\]</div>
+<p>Esto nos dice que el vector de onda se conserva en el espacio-tiempo y que necesariamente <span class="arithmatex">\(\hbar k = \pm p\)</span> . </p>
+<p>Podemos ahora hallar una base para el conjunto de ondas planas soluciones a la ecuación de Dirac. Para ello elegimos una basa para las componentes correspondientes a las partículas y hallamos las componentes correspondientes a las anti-partículas en función de estas. Eligiendo una base para <span class="arithmatex">\(u_A\)</span> con <span class="arithmatex">\(\hbar k = p\)</span>:</p>
+<div class="arithmatex">\[
+u^{(1)}_A = \begin{pmatrix} 1 \\ 0\end{pmatrix} \Rightarrow
+u^{(1)}_B = \frac{\vec p \cdot \vec \sigma}{p^0 + mc} \begin{pmatrix} 1 \\ 0\end{pmatrix} = \frac{c}{E + mc^2} \begin{pmatrix} p_z \\ p_x + ip_y\end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+u_A^{(2)} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \Rightarrow
+u^{(2)}_B = \frac{\vec p \cdot \vec \sigma}{p^0 + mc} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \frac{c}{E + mc^2} \begin{pmatrix} p_x - i p_y \\ -p_z \end{pmatrix}
+\]</div>
+<p>Por otra parte eligiendo una base para <span class="arithmatex">\(v_B\)</span> con <span class="arithmatex">\(\hbar k = -p\)</span> obtenemos: </p>
+<div class="arithmatex">\[
+v_A^{(1)} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \Rightarrow
+v^{(1)}_B = \frac{c}{E + mc^2} \begin{pmatrix} p_x - i p_y \\ -p_z \end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+v^{(2)}_B = \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+\Rightarrow v^{(2)}_{A} = \frac{c}{E + mc^2} \begin{pmatrix} p_z \\ p_x + ip_y\end{pmatrix}
+\]</div>
+<p>En donde se uso que <span class="arithmatex">\(\hbar k = -p\)</span> en el segundo caso ya que de otra forma las soluciones <span class="arithmatex">\(v_b\)</span> divergen cuando el momento de la partícula es nulo. Luego:</p>
+<div class="arithmatex">\[
+u^{(1)} = \begin{pmatrix} 1 \\ 0 \\ \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + ip_y)}{E + mc^2} \end{pmatrix} 
+\qquad 
+u^{(2)} = \begin{pmatrix} 0 \\ 1 \\ \frac{c(p_x - ip_y)}{E + mc^2} \\ \frac{-c p_z}{E + mc^2} \end{pmatrix}  
+\qquad
+v^{(1)} = \begin{pmatrix} \frac{c(p_x - ip_y)}{E + mc^2} \\ \frac{-cp_z}{E + mc^2} \\ 0 \\ 1\end{pmatrix}
+\qquad
+v^{(2)} = \begin{pmatrix} \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + ip_y)}{E + mc^2} \\ 1 \\ 0\end{pmatrix}
+\]</div>
+<p>Buscamos ahora la norma de estos espinores. Notemos que:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+(u^{(1)})^{\dagger}u^{(1)} \sim \begin{pmatrix} 1 &amp; 0 &amp; \frac{cp_z}{E + mc^2} &amp; \frac{c(p_x - i p_y)}{E + mc^2}  \end{pmatrix} \begin{pmatrix} 1 \\ 0 \\ \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + i p_y)}{E + mc^2} \end{pmatrix} = 1 + \frac{c|\vec{p}|}{(E + mc^2)^2}\\
+= 1 + \frac{(E/c)^2 - (mc)^2}{(E/c + mc)^2}  = 1 + \frac{E/c - mc}{E/c + mc} = \frac{2E/c}{E/c + mc}
+\end{aligned}
+\]</div>
+<p>El mismo resultado se puede hallar para el resto de los espinores. Luego si se busca que la norma de estos sea <span class="arithmatex">\(2E/c\)</span> (Convención Halzen-Martin) , entonces:</p>
+<div class="arithmatex">\[
+\frac{2E/c}{E/c + mc} N^2 = 2E/c \Rightarrow N = \sqrt{E/c + mc} 
+\]</div>
+<p>Finalmente, las soluciones canónicas para la ecuación de Dirac serán para las partículas:</p>
+<div class="arithmatex">\[ 
+\psi^{(1)} = \frac{c}{\sqrt{E + mc^2}} \begin{pmatrix} 1 \\ 0 \\ \frac{cp_z}{(E + mc^2)} \\ \frac{c(p_x + i p_y)}{E + mc^2}  \end{pmatrix} e^{-i\frac{mc^2}{\hbar}t} \qquad \psi^{(2)} 
+= 
+\frac{c}{\sqrt{E + mc^2}} \begin{pmatrix} 0 \\ 1 \\ \frac{c(p_x - i p_y)}{E + mc^2} \\ \frac{-cp_z}{E + mc^2}  \end{pmatrix}  e^{-i\frac{mc^2}{\hbar}t}
+\]</div>
+<p>Y para las antipartículas:</p>
+<div class="arithmatex">\[
+\psi^{(3)} = \frac{c}{\sqrt{E + mc^2}} \begin{pmatrix} \frac{c(p_x - i p_y)}{E + mc^2} \\ \frac{-cp_z}{E + mc^2} \\ 0 \\ 1 \end{pmatrix}  e^{i\frac{mc^2}{\hbar}t}
+\qquad
+\psi^{(4)} = \frac{c}{\sqrt{E + mc^2}} \begin{pmatrix} \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + i p_y)}{E + mc^2}  \\ 1 \\ 0 \end{pmatrix} e^{i\frac{mc^2}{\hbar}t} 
+\]</div>
+<h3 id="espin">Espín</h3>
+<p>Consideramos ahora la matriz <span class="arithmatex">\(\vec{S}\)</span> compuesta por las matrices de Pauli:</p>
+<div class="arithmatex">\[
+\vec{S} = \frac{\hbar}{2} \begin{pmatrix} \vec{\sigma} &amp; 0 \\ 0 &amp; \vec{\sigma} \end{pmatrix}
+\]</div>
+<p>Es fácil ver que los espinores encontrados no son auto-estados de la matriz <span class="arithmatex">\(\vec{S}\)</span>. Basta con verificar con las ultimas componentes de <span class="arithmatex">\(u^{(1)}\)</span> con la componente <span class="arithmatex">\(\hat{S}_z\)</span>:</p>
+<div class="arithmatex">\[
+\begin{pmatrix}1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}
+\begin{pmatrix} \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + ip_y)}{E + mc^2} \end{pmatrix} = 
+\begin{pmatrix} \frac{cp_z}{E + mc^2} \\ -\frac{c(p_x + ip_y)}{E + mc^2} \end{pmatrix} 
+\]</div>
+<p>Luego <span class="arithmatex">\(u^{(1)}\)</span> no puede ser un auto vector de <span class="arithmatex">\(\hat{S}_z\)</span>. Sin embargo los espinores pueden ser orientados en la espacial dirección <span class="arithmatex">\(z\)</span> . Si las otras componentes se anulan se tendrá que:</p>
+<div class="arithmatex">\[
+cp_z = c|\vec{p}| = \sqrt{E^2 - (mc^2)^2} = \sqrt{E-mc^2} \sqrt{E+mc^2}
+\]</div>
+<p>Luego reemplazando:</p>
+<div class="arithmatex">\[
+u^{(1)} = \frac{c}{\sqrt{E + mc^2}} \begin{pmatrix} 1 \\ 0 \\ \frac{\sqrt{E-mc^2}}{\sqrt{E+mc^2}} \\ 0 \end{pmatrix} = \frac{c}{E+ mc^2} \begin{pmatrix} \sqrt{E+mc^2} \\ 0 \\ \sqrt{E-mc^2} \\ 0\end{pmatrix}
+\]</div>
+<p>De la misma forma pueden orientarse hacia la dirección <span class="arithmatex">\(z\)</span> los espinores restantes y obtenemos para cada uno que:</p>
+<div class="arithmatex">\[
+u^{(2)} = \frac{c}{E+mc^2} \begin{pmatrix} 0 \\  \sqrt{E+mc^2} \\ 0 \\  \sqrt{E-mc^2} \end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+v^{(1)} =  \frac{c}{E+mc^2}\begin{pmatrix} 0 \\  -\sqrt{E-mc^2} \\ 0 \\  \sqrt{E+mc^2} \end{pmatrix}
+\qquad
+v^{(2)} = \frac{c}{E+mc^2}\begin{pmatrix} \sqrt{E-mc^2} \\ 0 \\  \sqrt{E+mc^2} \\ 0 \end{pmatrix}
+\]</div>
+<p>De esta forma ahora todos ellos son auto vectores del operador spin <span class="arithmatex">\(\hat{S}_z\)</span>. Veamos esto:</p>
+<div class="arithmatex">\[ 
+\hat{S}_z u^{(1)} = \frac{\hbar}{2} \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end{pmatrix} \begin{pmatrix} \sqrt{(E + mc^2)/c} \\ 0 \\ \sqrt{(E - m c^2)/c} \\ 0 \end{pmatrix} =  \frac{\hbar}{2}  \begin{pmatrix} \sqrt{(E + mc^2)/c} \\ 0 \\ \sqrt{(E - m c^2)/c} \\ 0 \end{pmatrix} = \frac{\hbar}{2} u^{(1)}
+\]</div>
+<div class="arithmatex">\[ 
+\hat{S}_z u^{(2)} = \frac{\hbar}{2} \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end{pmatrix} \begin{pmatrix} 0 \\ \sqrt{(E + mc^2)/c} \\ 0 \\ -\sqrt{(E - m c^2)/c} \end{pmatrix} = -\frac{\hbar}{2}  \begin{pmatrix} 0 \\ \sqrt{(E + mc^2)/c} \\ 0 \\ -\sqrt{(E - m c^2)/c} \end{pmatrix} = -\frac{\hbar}{2} u^{(2)}
+\]</div>
+<div class="arithmatex">\[ 
+\hat{S}_z v^{(1)} = \frac{\hbar}{2} \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end{pmatrix} \begin{pmatrix} 0 \\  -\sqrt{(E - m c^2)/c}  \\ 0 \\ \sqrt{(E + mc^2)/c} \end{pmatrix} =  -\frac{\hbar}{2}  \begin{pmatrix} 0 \\  -\sqrt{(E - m c^2)/c}  \\ 0 \\ \sqrt{(E + mc^2)/c} \end{pmatrix} = -\frac{\hbar}{2} v^{(1)}
+\]</div>
+<div class="arithmatex">\[ 
+\hat{S}_z v^{(2)} =  \frac{\hbar}{2} \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end{pmatrix} \begin{pmatrix} \sqrt{(E - m c^2)/c} \\ 0 \\ \sqrt{(E + mc^2)/c} \\ 0 \end{pmatrix} =  \frac{\hbar}{2}  \begin{pmatrix} \sqrt{(E - m c^2)/c} \\ 0 \\ \sqrt{(E + mc^2)/c} \\ 0 \end{pmatrix} = \frac{\hbar}{2} v^{(2)}
+\]</div>
+<p>Luego <span class="arithmatex">\(u^{(1)}\)</span>, <span class="arithmatex">\(u^{(2)}\)</span>, <span class="arithmatex">\(v^{(1)}\)</span>, <span class="arithmatex">\(v^{(2)}\)</span> como <em>auto-espinores</em> del operador <span class="arithmatex">\(\hat{S}_z\)</span>, en donde  <span class="arithmatex">\(u^{(1)}\)</span>, <span class="arithmatex">\(u^{(2)}\)</span> corresponden a electrones con espines <span class="arithmatex">\(\ket{\uparrow}\)</span> y <span class="arithmatex">\(\ket{\downarrow}\)</span> respectivamente, y a  <span class="arithmatex">\(v^{(1)}\)</span>, <span class="arithmatex">\(v^{(2)}\)</span> como positrones con espín <span class="arithmatex">\(\ket{\downarrow}\)</span> y <span class="arithmatex">\(\ket{\uparrow}\)</span> respectivamente.</p>
+<h3 id="conjugados-de-carga">Conjugados de carga</h3>
+<p>Otro operador importante que se puede identificar, es el de conjugación de carga (<span class="arithmatex">\(C\)</span>), el cual transforma un espinor de Dirac <span class="arithmatex">\(\psi\)</span> en el espinor conjugado de carga <span class="arithmatex">\(\psi_c\)</span> dado por:</p>
+<div class="arithmatex">\[ \psi_c = i \gamma^2 \psi^* \]</div>
+<p>Donde <span class="arithmatex">\(\gamma^2\)</span> es la tercera matriz de Dirac, dada por:</p>
+<div class="arithmatex">\[ 
+\gamma^2 = \begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; -i \\  0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ -i &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} 
+\]</div>
+<p>Se puede probar que los conjugados de carga de los auto-espinores de las partículas <span class="arithmatex">\(u^{(1)}\)</span> y <span class="arithmatex">\(u^{(2)}\)</span> son iguales a los auto-espinores <span class="arithmatex">\(v^{(1)}\)</span> y <span class="arithmatex">\(v^{(2)}\)</span> de las anti-partículas, respectivamente. Esto es:</p>
+<div class="arithmatex">\[ 
+u^{(1)}_c = i \gamma^2 (u^{(1)})^* \sim \begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\  0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \\ \frac{cp_z}{E + mc^2} \\ \frac{c(p_x - i p_y)}{E + mc^2} \end{pmatrix} = \begin{pmatrix} \frac{c(p_x - i p_y)}{E + mc^2} \\ -\frac{cp_z}{E + mc^2} \\ 0 \\ 1 \end{pmatrix} \Rightarrow u_c^{(1)} = v^{(1)}
+\]</div>
+<div class="arithmatex">\[ 
+u^{(2)}_c = i \gamma^2 (u^{(2)})^* \sim \begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\  0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \\ \frac{c(p_x - i p_y)}{E + mc^2} \\ -\frac{cp_z}{E + mc^2} \end{pmatrix} =\begin{pmatrix}  \frac{cp_z}{E + mc^2} \\  \frac{c(p_x - i p_y)}{E + mc^2} \\1 \\0 \end{pmatrix} \Rightarrow u_c^{(2)} = v^{(2)}
+\]</div>
+<p>Esto nos dice que los conjugados de carga de cada partículas son sus respectivas anti-partículas. De la misma forma para los espinores <span class="arithmatex">\(v^{(1)}\)</span> y <span class="arithmatex">\(v^{(2)}\)</span> tendremos que:</p>
+<div class="arithmatex">\[
+v_c^{(1)} = i\gamma^2 (v^{(1)})^* \sim\begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\  0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} \begin{pmatrix} \frac{c(p_x - i p_y)}{E + mc^2} \\ -\frac{cp_z}{E + mc^2} \\ 0 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \\ \frac{cp_z}{E + mc^2} \\ \frac{c(p_x - i p_y)}{E + mc^2} \end{pmatrix} \Rightarrow v_c^{(1)} = u^{(1)}
+\]</div>
+<div class="arithmatex">\[
+v_c^{(2)} = i\gamma^2 (v^{(2)})^* \sim\begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\  0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} \begin{pmatrix} \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + i p_y)}{E + mc^2} \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \\ -\frac{c(p_x + i p_y)}{E + mc^2} \\ \frac{cp_z}{E + mc^2} \end{pmatrix} \Rightarrow v_c^{(2)} = u^{(2)}
+\]</div>
+<p>Este resultado no solo refleja una simetría fundamental en la formulación de la teoría de Dirac, sino que también ilustra el papel de la <strong>conjugación de carga</strong> como una transformación que convierte partículas en sus correspondientes antipartículas, invirtiendo sus cargas internas (como la carga eléctrica o el número leptónico) pero manteniendo su momento y energía.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

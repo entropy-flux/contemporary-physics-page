@@ -1,0 +1,942 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../3.4.1%20Dispersi%C3%B3n%20Electr%C3%B3n-Mu%C3%B3n/">
+      
+      
+        <link rel="next" href="../3.4.3%20Aniquilaci%C3%B3n%20Electr%C3%B3n-Positr%C3%B3n/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>3.4.2 Dispersión de Compton - Física Contemporánea</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Física Contemporánea" class="md-header__button md-logo" aria-label="Física Contemporánea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Física Contemporánea
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3.4.2 Dispersión de Compton
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Física Contemporánea" class="md-nav__button md-logo" aria-label="Física Contemporánea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Física Contemporánea
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    1. Física Molecular
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1. Física Molecular
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20F%C3%ADsica%20Molecular/1.1%20La%20mol%C3%A9cula%20de%20hidrogeno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.1 La molécula de hidrogeno
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20F%C3%ADsica%20Molecular/1.2%20Orbitales%20moleculares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.2 Orbitales moleculares
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20F%C3%ADsica%20Molecular/1.3%20El%20enlace%20i%C3%B3nico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.3 El enlace iónico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20F%C3%ADsica%20Molecular/1.4%20Interacci%C3%B3n%20de%20Van%20Der%20Wals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.4 Interacción de Van Der Wals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20F%C3%ADsica%20Molecular/1.5%20Espectros%20rotacionales%20y%20vibracionales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.5 Espectros rotacionales y vibracionales
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2. Física Núclear
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. Física Núclear
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.%20F%C3%ADsica%20N%C3%BAclear/2.1%20Estructura%20nuclear/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.1 Estructura nuclear
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.%20F%C3%ADsica%20N%C3%BAclear/2.2%20Procesos%20nucleares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.2 Procesos nucleares
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.%20F%C3%ADsica%20N%C3%BAclear/2.3%20Desintegraci%C3%B3n%20alfa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3 Desintegración alfa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.%20F%C3%ADsica%20N%C3%BAclear/2.4%20Desintegraci%C3%B3n%20beta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.4 Desintegración beta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    3. Física de Partículas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3. Física de Partículas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.1%20Simetr%C3%ADas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.1 Simetrías
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2%20Fermiones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.2 Fermiones
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.3%20Fotones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.3 Fotones
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4.1%20Dispersi%C3%B3n%20Electr%C3%B3n-Mu%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.4.1 Dispersión Electrón Muón
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.4.2 Dispersión de Compton
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4.3%20Aniquilaci%C3%B3n%20Electr%C3%B3n-Positr%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.4.3 Aniquilación Electrón Positrón
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>3.4.2 Dispersión de Compton</h1>
+
+<p>El efecto Compton (o dispersión Compton) consiste en el aumento de la longitud de onda de un fotón cuando choca con un electrón libre y pierde parte de su energía. </p>
+<p>Este proceso puede escribirse como <span class="arithmatex">\(e^- + \gamma \rightarrow e^- + \gamma\)</span>.  Escribamos sus <span class="arithmatex">\(4\)</span>-momentos desde un marco de referencia para el cual la <span class="arithmatex">\(3\)</span>-velocidad inicial del electrón es nula y en el cual el fotón viaja sobre el eje <span class="arithmatex">\(z\)</span>.</p>
+<div class="arithmatex">\[
+p_1 = (mc, \vec0) \quad p_2 = (\hbar \omega /c, \hbar \vec{k}) \quad  p_3 = (\hbar \omega'/c, \hbar \vec k') \quad p_4 =(E/c, \vec p) 
+\]</div>
+<p>Como el fotón no tiene masa, el factor de flujo se reduce a <span class="arithmatex">\(4(p_1\cdot p_2) = 4m_ec \hbar\omega\)</span> . Luego la sección transversal será:</p>
+<div class="arithmatex">\[ 
+\begin{aligned}
+\sigma = \frac{\hbar^2 S}{4mc \hbar\omega}\int(2\pi)^4|\mathcal{M}|^2 \delta^4(p_1+p_2-p_3-p_4) \\
+\times 2 \pi \delta(p_3^2 - m_e^2c^2)\theta(p^0_3) 2 \pi \delta(p_4^2)\theta(p^0_4) \frac{d^4p_3}{(2\pi)^4} \frac{d^4p_4}{(2\pi)^4}
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[ 
+\begin{aligned}
+\sigma = \frac{\hbar^2 S}{4\hbar\omega m} \frac{1}{(2\pi)^2} \int |\mathcal{M}^2| \delta(mc + \hbar|\vec{k}| - p_3^0 -p_4^0) \delta^3(\hbar \vec{k} - \vec{p}_4 - \vec{p_3}) \\
+\times
+\frac{\delta(p_3^0- |\vec{p}_3|)}{2|\vec{p}_3|} 
+\frac{\delta(p^0_4-\sqrt{|\vec{p_4}|^2+m^2c^2})}{2\sqrt{|\vec{p_4}|^2+m^2c^2}}d^4p_3 d^4p_4
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[
+\sigma = \left(\frac{\hbar}{8\pi} \right)^2 \frac{S}{\hbar m\omega} \int 
+|\mathcal{M}|^2 \frac
+{\delta(mc + \hbar|\vec{k}| - |\vec{p_3}| - \sqrt{|\vec{p_4}|^2+(mc)^2})}
+{|\vec{p}_3| \sqrt{|\vec{p_4}|^2 + (mc)^2}} \delta(\vec{p}_3 + \vec{p}_4 - \hbar\vec{k}) d^3 \vec{p}_3 d^3 \vec{p_4}
+\]</div>
+<p>Analicemos la delta de Dirac restante. Sea <span class="arithmatex">\(\theta\)</span> el ángulo entre el fotón incidente y el dispersado. Notemos que podemos escribir <span class="arithmatex">\(\vec{p}_4\)</span> como:</p>
+<div class="arithmatex">\[
+\vec{p_4} = \hbar \vec{k} - \vec{p}_3 \Rightarrow |\vec{p}_3
+| = \sqrt{(\hbar|\vec{k}|)^2 + |\vec{p}_3| - 2 \hbar|\vec{k}||\vec{p}_3| \cos \theta }\]</div>
+<div class="arithmatex">\[
+\Rightarrow \sqrt{|\vec{p}_4|^2 + (mc)^2} = \sqrt{(\hbar|\vec{k}|)^2 + |\vec{p}_3| - 2 \hbar|\vec{k}||\vec{p}_3| \cos \theta + (mc)^2} 
+\]</div>
+<p>Tomando <span class="arithmatex">\(u = \sqrt{|\vec{p}_4|^2+(mc)^2} + |\vec{p}_3|\)</span> y reemplazando lo anterior:</p>
+<div class="arithmatex">\[
+u = \sqrt{(\hbar|\vec{k}|)^2 + |\vec{p}_3|^2 - 2 \hbar|\vec{k}||\vec{p}_3| \cos \theta + (mc)^2} + |\vec{p}_3|
+\]</div>
+<div class="arithmatex">\[
+\frac{du}{d|\vec{p_3}|} = \frac{|\vec{p}_3| - \hbar{\vec{k} \cos \theta}}{u - |\vec{p}_3|} + 1 =  \frac{u - \hbar{\vec{k} \cos \theta}}{u - |\vec{p}_3|} 
+\]</div>
+<p>Integrando sobre <span class="arithmatex">\(\vec{p}_4\)</span> y derivando sobre el ángulo solido <span class="arithmatex">\(\Omega\)</span>, la integral queda solo en términos del modulo <span class="arithmatex">\(|\vec{p}_3|\)</span>. Reemplazando <span class="arithmatex">\(u\)</span> en la integral: </p>
+<div class="arithmatex">\[
+\frac{d\sigma}{d\Omega} = \left(\frac{\hbar}{8\pi}\right)^2 \frac{S}{\hbar\omega m} |\mathcal{M}|^2 
+\int_0^{\infty} \frac{\delta(mc + \hbar|\vec{k}| - u)}{(u-|\vec{p}_3|)|\vec{p}_3|} |\vec{p}_3|^2 d|\vec{p}_3|
+\]</div>
+<p>Haciendo el cambio de variable:</p>
+<div class="arithmatex">\[ 
+\frac{d\sigma}{d\Omega} = \left(\frac{\hbar}{8\pi}\right)^2 \frac{S}{\hbar\omega m} |\mathcal{M}|^2 \int_0^{\infty} \frac{\delta(mc + \hbar|\vec{k}| - u)}{ u - \hbar |\vec{k}| \cos\theta} |\vec{p}_3| du
+\]</div>
+<p>Al integrar la delta Dirac nos genera la siguiente igualdad. </p>
+<div class="arithmatex">\[ 
+u = mc + \hbar|\vec{k}| = \sqrt{(\hbar|\vec{k}|)^2 + |\vec{p}_4|^2 - 2 \hbar|\vec{k}||\vec{p}_4| \cos \theta + (mc)^2} + |\vec{p}_4|
+\]</div>
+<div class="arithmatex">\[
+(mc + \hbar|\vec{k}| - |\vec{p}_4|)^2 = (\hbar|\vec{k}|)^2 + |\vec{p}_4|^2 - 2\hbar|\vec{k}| |\vec{p_4}| \cos \theta + (mc)^2
+\]</div>
+<div class="arithmatex">\[
+mc \hbar|\vec{k}| - mc |\vec{p}_4| - \hbar|\vec{k}| |\vec{p}_4|= -\hbar|\vec{k}| |\vec{p}_4| \cos \theta
+\]</div>
+<div class="arithmatex">\[
+mc\hbar|\vec{k}| = |\vec{p}_4|(mc+\hbar|\vec{k}|-\hbar|\vec{k}|\cos\theta)
+\]</div>
+<div class="arithmatex">\[
+|\vec{p}_4| = \frac{mc\hbar|\vec{k}|}{mc+\hbar|\vec{k}|(1-\cos\theta)} = \frac{mc\hbar |\vec{k}|}{u - \hbar|\vec{k}|\cos \theta}
+\]</div>
+<p>Podemos finalmente reemplazara en la sección eficaz diferencial este valor de <span class="arithmatex">\(|\vec{p}_4|\)</span>, y <span class="arithmatex">\(S = 1\)</span> y obtenemos:</p>
+<div class="arithmatex">\[ 
+\frac{d\sigma}{d\Omega} = \left(\frac{\hbar}{8\pi}\right)^2 \frac{S}{\hbar\omega m} |\mathcal{M}|^2 \int_0^{\infty} \frac{\delta(mc + \hbar|\vec{k}| - u)}{(u - \hbar |\vec{k}| \cos\theta)^2}  mc\hbar|\vec{k}| du
+\]</div>
+<p>Integrando sobre <span class="arithmatex">\(u\)</span> la sección transversal diferencial será:</p>
+<div class="arithmatex">\[
+\frac{d\sigma}{d\Omega} = \left(\frac{\hbar c}{8\pi}\right)^2 \frac{|\mathcal{M}|^2} {[mc^2 + \hbar \omega(1-\cos\theta)]^2} 
+\]</div>
+<p>Con <span class="arithmatex">\(\omega\)</span> la frecuencia del fotón incidente y <span class="arithmatex">\(\theta\)</span> el ángulo del fotón dispersado con respecto a este. Hallemos ahora la amplitud <span class="arithmatex">\(\mathcal{M}\)</span> usando el ritual de Feynman. Notemos que para  el proceso <span class="arithmatex">\(e^- + \gamma \rightarrow e^- + \gamma\)</span> hay dos diagramas de Feynman de segundo orden. </p>
+<p><img alt="Efecto Compton" src="../../assets/20250226010357.png" /></p>
+<p>Siguiendo el ritual de Feynman asociamos a los diagramas: </p>
+<ul>
+<li>
+<p><span class="arithmatex">\(4\)</span>-momentos <span class="arithmatex">\(p_1\)</span>, <span class="arithmatex">\(p_2\)</span>, <span class="arithmatex">\(p_3\)</span> y <span class="arithmatex">\(p_4\)</span> a las líneas externas y <span class="arithmatex">\(q\)</span> a la línea interna. </p>
+</li>
+<li>
+<p>Estados <span class="arithmatex">\(u^{(s_1)}\)</span>,  <span class="arithmatex">\(\epsilon^{(s_2)}\)</span>, <span class="arithmatex">\(\epsilon^{*(s_3)}\)</span> y <span class="arithmatex">\(\bar{u}^{(s_4)}\)</span>.</p>
+</li>
+<li>
+<p>Constantes de acople <span class="arithmatex">\(ig_e \gamma^{\mu}\)</span> y <span class="arithmatex">\(ig_e \gamma^{\nu}\)</span> en donde <span class="arithmatex">\(g_e\)</span> es la constante de acoplamiento <span class="arithmatex">\(g_e = \sqrt{4\pi \alpha}\)</span>.</p>
+</li>
+<li>
+<p>El propagador correspondiente a un fermión <span class="arithmatex">\(i \frac{\gamma^{\mu} q_{\mu} + mc}{q^2 - (mc)^2}\)</span>.</p>
+</li>
+<li>
+<p>Términos asociados a la conservación del momento y energía <span class="arithmatex">\((2\pi)^4\delta^4(p_1 - q - p_3)\)</span> y <span class="arithmatex">\((2\pi)^4\delta^4(p_2 + q - p_4)\)</span> al primer diagrama y  <span class="arithmatex">\((2\pi)^4\delta^4(p_1 + p_2 - q)\)</span> y <span class="arithmatex">\((2\pi)^4\delta^4(q - p_3 - p_4)\)</span> al segundo diagrama. </p>
+</li>
+</ul>
+<p>Integramos hacia atrás partiendo del electrón dispersado:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+i(2\pi)^4 \delta^4(p_1 + p_2 - p_3 - p_4) \mathcal{M}_1 = \int [\bar{u}^{(4)}(p_4)(ig_e \gamma^{\mu}) \epsilon_{\mu}^{(2)}(p_2)] \\
+(2\pi)^4\delta^4(p_2 + q - p_4) \frac{\gamma^{\mu} q_{\mu} + mc}{q^2 - (mc)^2} (2\pi)^4\delta^4(p_1 - q + p_3) [\epsilon^{*(3)}_{\nu}(p_3) (ig_e\gamma^{\nu}) u^{(1)}(p_1)] \frac{d^4q}{(2\pi)^4}
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[
+\mathcal{M}_1 = \frac{-g_e^2}{(p_1 - p_3)^2 - (mc)^2} [\bar{u}(4) \cancel{\epsilon_2}](\cancel{p_1} - \cancel{p_3} + mc)[\cancel{\epsilon^*_3} u(1)]
+\]</div>
+<p>De la misma forma para el segundo diagrama:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+i(2\pi)^4 \delta^4(p_1 + p_2 - p_3 - p_4) \mathcal{M}_2 = \int [\bar{u}^{(4)}(p_4)(ig_e \gamma^{\mu}) \epsilon_{\mu}^{*(3)}(p_3)] \\
+(2\pi)^4\delta^4(p_1 + p_2 - q) \frac{\gamma^{\mu} q_{\mu} + mc}{q^2 - (mc)^2} (2\pi)^4\delta^4(q - p_3 - p_4) [\epsilon^{*(2)}_{\nu}(p_2) (ig_e\gamma^{\nu}) u^{(1)}(p_1)] \frac{d^4q}{(2\pi)^4}
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[
+\mathcal{M}_2 = \frac{-g_e^2}{(p_1 + p_2)^2 - (mc)^2} [\bar{u}(4) \cancel{\epsilon^*_3}](\cancel{p_1} + \cancel{p_2} + mc)[\cancel{\epsilon_2} u(1)]
+\]</div>
+<p>Notemos que las polarizaciones anti conmutan con los momentos de los electrones. </p>
+<div class="arithmatex">\[
+\begin{aligned}
+\cancel{p_3} \cancel{\epsilon^*_3} = - \cancel{\epsilon^*_3} \cancel{p_3} \qquad \cancel{p_1} \cancel{\epsilon^*_3} = - \cancel{\epsilon^*_3} \cancel{p_1} 
+\\ \\
+\cancel{p_2} \cancel{\epsilon_2} = - \cancel{\epsilon_2} \cancel{p_2} \qquad \cancel{p_1} \cancel{\epsilon_2} = - \cancel{\epsilon_2} \cancel{p_1} 
+\end{aligned}
+\]</div>
+<p>Luego, puede usarse que los fermiones satisfacen la ecuación de Dirac para simplificar las expresiones:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+(\cancel{p_1} - \cancel{p_3} + mc) \cancel{\epsilon^*_3}u(1) = \cancel{\epsilon^*_3}(\cancel{p_3} - \cancel{p_1} + mc) u(1) = \cancel{\epsilon^*_3} \cancel{p_3} u(1)
+\\ \\
+(\cancel{p_1} + \cancel{p_2} + mc)\cancel{\epsilon_3} u(1) = \cancel{\epsilon_3}  
+(- \cancel{p_1} - \cancel{p_2} + mc) u(1) = - \cancel{\epsilon_2}\cancel{p_2} u(1)
+\end{aligned}
+\]</div>
+<p>Por otra parte los denominadores se pueden simplificar como:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+(p_1 - p_3)^2 - (mc)^2 = p_1\cdot p_1 - 2(p_1\cdot p_3) - (mc)^2 = -2(p_1 \cdot p_3)
+\\ \\
+(p_1 + p_2)^2 - (mc)^2 = p_1 \cdot p_1 + 2(p_1\cdot p_2)  - (mc)^2= 2(p_1\cdot p_2)
+\end{aligned}
+\]</div>
+<p>Reemplazando:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\mathcal{M}_1 = \frac{g_e^2}{2(p_1\cdot p_3)}  \bar{u}(4) \cancel{\epsilon_2} \cancel{\epsilon_3^*} \cancel{p_3}u(1)
+\qquad 
+\mathcal{M}_2 = \frac{g_e^2}{2(p_1\cdot p_2)}  \bar{u}(4) \cancel{\epsilon_3} \cancel{\epsilon_2} \cancel{p_2}u(1)
+\end{aligned}
+\]</div>
+<p>Luego la amplitud total es simplemente la suma de ambas contribuciones:</p>
+<div class="arithmatex">\[
+\mathcal{M} = \frac{g_e^2}{2} \bar{u}(4)\left(\frac{\cancel{\epsilon_2} \cancel{\epsilon_3^*} \cancel{p_3}}{p_1 \cdot p_3} + \frac{ \cancel{\epsilon_3} \cancel{\epsilon_2} \cancel{p_2}}{p_1 \cdot p_2} \right) u(1)
+\]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
