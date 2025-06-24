@@ -201,7 +201,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    Física Contemporánea
     
   </span>
   
@@ -1082,7 +1082,7 @@ E^{v,l} = V(R_0 ) + \hbar \omega(v + \frac{1}{2}) + \frac{\hbar^2l(l+1)}{2\mu R_
 <h4 id="energia-rotacional-del-textco">Energía rotacional del <span class="arithmatex">\(\text{CO}\)</span></h4>
 <p>Calculemos la energía <strong>rotacional</strong> de los tres primeros niveles rotacionales puros molécula <span class="arithmatex">\(\text{CO}\)</span>. Determinemos también la longitud de onda de los fotones absorbidos en las transiciones entre estos niveles de energía. La longitud de enlace de la molécula es <span class="arithmatex">\(1,13\text{Å}\)</span>. Los niveles de energía rotacionales para el <span class="arithmatex">\(\text{CO}\)</span> serán:</p>
 <div class="arithmatex">\[ 
-E_{rotacional}^l = \frac{\hbar^2l(l+1)}{2\mu R_0^2} \qquad l = 1,2,... \qquad \mu \frac{1}{\frac{1}{m_{\text{C}} } + \frac{1}{m_{\text{O}} }}
+E_{rotacional}^l = \frac{\hbar^2l(l+1)}{2\mu R_0^2} \qquad l = 0,1,2,... \qquad \mu \frac{1}{\frac{1}{m_{\text{C}} } + \frac{1}{m_{\text{O}} }}
 \]</div>
 <p>Reemplazando <span class="arithmatex">\(R_0 = 1,13\text{Å}\)</span> para <span class="arithmatex">\(l = 0, 1, 2\)</span>; obtenemos las energías: <span class="arithmatex">\(E_{rot}^0 = 0\)</span>,  <span class="arithmatex">\(E_{rot}^1 = 0.46 \text{meV}\)</span> y <span class="arithmatex">\(E_{rot}^2 = 1.42 \text{meV}\)</span>. Para realizar transiciones entre estos niveles la molécula necesita absorber energía la cual se transporta a través de fotones. La energía necesaria para una transición que la molécula realice la transición <span class="arithmatex">\(l \rightarrow l + 1\)</span> será:</p>
 <div class="arithmatex">\[ 
@@ -1204,20 +1204,73 @@ R_0 = \sqrt{\frac{\hbar}{2\pi\mu c\Delta\bar{\nu}}} \qquad \mu = \frac{1}{\frac{
 <p>La figura muestra un espectro de absorción de la molécula de bromuro de hidrógeno <span class="arithmatex">\(\text{HBr}\)</span> en fase gaseosa, en función del número de onda <span class="arithmatex">\(\bar{\nu} = \frac{1}{\lambda}\)</span>, siendo <span class="arithmatex">\(\lambda\)</span> la longitud de onda de la radiación electromagnética expresada en <span class="arithmatex">\(\text{cm}\)</span>.</p>
 <p><img alt="Espectroscopia rotovibracional" src="../../assets/20250304180833.png" /></p>
 <p>Las masas atómicas de los elementos bromo e hidrógeno son <span class="arithmatex">\(m_{\text{Br}} = 79.909 \, \text{u}\)</span> y <span class="arithmatex">\(m_{\text{H}} = 1.00784 \, \text{u}\)</span>, respectivamente.</p>
+<p>Analicemos las transiciones de estados. En la siguiente figura se puede ver un diagramas de las transiciones realizadas por la molécula de <span class="arithmatex">\(\text{HBr}\)</span>:</p>
+<p><img alt="" src="../../assets/20250624111524.png" /></p>
+<p>En el medio la transición prohibida por la regla de transición <span class="arithmatex">\(\Delta j \neq 0\)</span> y corresponde al pico faltante en el centro del espectro de absorción. A la izquierda se encuentran las transiciones correspondientes a las ramas <span class="arithmatex">\(R\)</span> y a la derecha las transiciones de la rama <span class="arithmatex">\(P\)</span>. Los niveles de energía de la molécula serán: </p>
+<div class="arithmatex">\[
+E_{v,j} = \epsilon + \hbar\omega(v+\frac{1}{2}) +B_{v} j(j+1)
+\]</div>
+<p>En donde <span class="arithmatex">\(B_v\)</span> es la constante rotacional para el nivel vibracional <span class="arithmatex">\(v\)</span>. En el espectro de absorción sin embargo no se miden las energías de los niveles sino mas bien la energía absorbida por las transiciones. </p>
 <ul>
-<li>Explicaremos la forma espectral medida en relación a la posición de las líneas de absorción observadas. Realizar un diagrama indicando las transiciones entre los niveles de energía correspondientes para las líneas espectrales comprendidas entre <span class="arithmatex">\(2510\text{cm}^{-1}\)</span> y <span class="arithmatex">\(2610\text{cm}^{-1}\)</span>.</li>
-<li>Estimaremos la separación inter-nuclear de la molécula <span class="arithmatex">\(\text{HBr}\)</span> en su estado fundamental.</li>
-<li>Estimaremos la energía de punto cero de la molécula <span class="arithmatex">\(\text{HBr}\)</span>.</li>
+<li>Ramas <span class="arithmatex">\(R\)</span> <span class="arithmatex">\((j \rightarrow j+1)\)</span>: </li>
 </ul>
 <div class="arithmatex">\[
-E^{v,l} = V(R_0 ) + \hbar \omega(v + \frac{1}{2}) + \frac{\hbar^2l(l+1)}{2\mu R_0^2} \quad v=0,1,2 ... \quad l = 0,1,2 ...
+\Delta_R E(j) = \hbar \omega + B_{1}(j+1)(j+2) - B_0 j(j+1)
 \]</div>
-<div class="arithmatex">\[ 
-\Delta E_R^{v, l} = E^{v+1, l+1} - E^{v,l} = \hbar\omega + \frac{\hbar^2}{\mu R_0^2}(l+1) \qquad l=0, 1, ...
+<ul>
+<li>Rama <span class="arithmatex">\(P\)</span> <span class="arithmatex">\((j + 1 \rightarrow j)\)</span>:</li>
+</ul>
+<div class="arithmatex">\[
+\Delta_PE(j) = \hbar \omega + B_1j(j+1) - B_0(j+1)(j+2)
 \]</div>
-<div class="arithmatex">\[ 
-\Delta E^{v, l}_P = E^{v+1, l-1} - E^{v,l} = \hbar \omega - \frac{\hbar^2}{\mu R_0^2} l \qquad l= 1, 2, 3, ...
+<p>Tomando la diferencia entre picos se pueden expresar las constantes rotacionales en términos de estas diferencias. En el caso de <span class="arithmatex">\(B_0\)</span>, podemos restarle al pico <span class="arithmatex">\(j\)</span> de la rama <span class="arithmatex">\(R\)</span> el pico <span class="arithmatex">\(j+1\)</span> de la rama <span class="arithmatex">\(P\)</span> y obtenemos:</p>
+<div class="arithmatex">\[
+\Delta_RE(j) - \Delta_PE(j+1) = B_0[(j+2)(j+3) - j(j+1)] = B_0(4j + 6) 
 \]</div>
+<div class="arithmatex">\[
+B_0 = \frac{\Delta_R E(j) - \Delta_P E(j+1)}{4j + 6}
+\]</div>
+<p>Asumiendo que la separación internuclear en el estado fundamental es aproximadamente igual a la distancia de equilibrio <span class="arithmatex">\(R_0\)</span>, usamos que:</p>
+<div class="arithmatex">\[
+B_0 \approx \frac{\hbar^2}{2\mu R_0^2} \Rightarrow R_0 \approx \sqrt{\frac{h^2}{8\pi^2 \mu B_0}} = \sqrt{\frac{h^2(4j+6)}{8\pi^2 \mu(\Delta_RE(j)-\Delta_PE(j+1))}}
+\]</div>
+<p>Dado que en espectroscopía se trabaja en términos de número de onda <span class="arithmatex">\(\bar{\nu}\)</span>, podemos expresar las diferencias de energía entre niveles en términos de esta:</p>
+<div class="arithmatex">\[
+\bar{\nu} = \frac{1}{\lambda} \Rightarrow ch \bar{\nu} = h \nu = \Delta E
+\]</div>
+<p>Utilizando los datos del problema:</p>
+<div class="arithmatex">\[
+\Delta_R E(0) - \Delta_PE(1) = ch(257944-252711)[\text{m}^{-1}] 
+\]</div>
+<p>Podemos obtener la constante rotacional <span class="arithmatex">\(B_0\)</span> como:</p>
+<div class="arithmatex">\[
+B_0 = (5233/6)[\text{m}^{-1}] hc \approx 872.16[\text{m}^{-1}]  hc
+\]</div>
+<p>Reemplazando en <span class="arithmatex">\(R_0\)</span> obtenemos que:</p>
+<div class="arithmatex">\[
+R_0 \approx \sqrt{\frac{3h}{4\pi^2 \mu c \times 872.16[\text{m}^{-1}] }} \qquad \text{con } \mu_{\text{HBr}} = \left( \frac{1}{m_\text{H}} + \frac{1}{m_\text{Br}} \right)^{-1}
+\]</div>
+<p>Sustituyendo:</p>
+<ul>
+<li><span class="arithmatex">\(h = 6.62607015\times10^{-34} \text{J} \cdot \text{s}\)</span> </li>
+<li><span class="arithmatex">\(c = 299.792.458 \text{m}\cdot \text{s}^{-1}\)</span></li>
+<li><span class="arithmatex">\(m_{\text{H}} \approx 1 \text{u} \approx 1.66\times 10^{-27}\)</span></li>
+<li><span class="arithmatex">\(m_{\text{Br}} \approx 79.9 m_H\)</span></li>
+</ul>
+<p>Obtenemos que la separación internuclear de equilibrio será <span class="arithmatex">\(R_0 \approx 1.4 \text{Å}\)</span> en su estado fundamental. Hallemos ahora la energía de punto cero:</p>
+<div class="arithmatex">\[
+E_0 = \frac{1}{2} \hbar\omega
+\]</div>
+<p>Notemos que esta información esta contenida en el primer pico de la rama <span class="arithmatex">\(P\)</span>: </p>
+<div class="arithmatex">\[
+\Delta_PE(0) = \hbar \omega - 2B_0 \Rightarrow E_0 = \frac{\Delta_P E(0) + 2B_0}{2}
+\]</div>
+<p>Reemplazando:</p>
+<ul>
+<li><span class="arithmatex">\(\Delta_P E(0) = 254580 [\text{m}^{-1}]  hc\)</span> </li>
+<li><span class="arithmatex">\(B_0 = 872.16[\text{m}^{-1}] hc\)</span> </li>
+</ul>
+<p>Obtenemos que la energía del punto cero de la molécula de <span class="arithmatex">\(\text{HBr}\)</span> será de <span class="arithmatex">\(E_0 \approx 0.16 \text{eV}\)</span>.</p>
 
 
 
