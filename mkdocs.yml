@@ -16,8 +16,8 @@ plugins:
   - search
   - mkdocs-simple-hooks:
       hooks:
-        on_pre_build: "hooks:copy_folder"
-        on_post_build : "hooks:cleanup_folder"
+        on_pre_build: "hooks:copy_folder" 
+        on_post_build : "hooks:cleanup_folder" 
 
 extra_css:
   - stylesheets/custom.css
