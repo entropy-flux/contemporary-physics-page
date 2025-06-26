@@ -681,6 +681,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#covariantes-bilineales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Covariantes Bilineales
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -844,6 +853,15 @@
   <a href="#conjugados-de-carga" class="md-nav__link">
     <span class="md-ellipsis">
       Conjugados de carga
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#covariantes-bilineales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Covariantes Bilineales
     </span>
   </a>
   
@@ -1089,6 +1107,91 @@ v_c^{(1)} = i\gamma^2 (v^{(1)})^* \sim\begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 
 v_c^{(2)} = i\gamma^2 (v^{(2)})^* \sim\begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\  0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} \begin{pmatrix} \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + i p_y)}{E + mc^2} \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \\ -\frac{c(p_x + i p_y)}{E + mc^2} \\ \frac{cp_z}{E + mc^2} \end{pmatrix} \Rightarrow v_c^{(2)} = u^{(2)}
 \]</div>
 <p>Este resultado no solo refleja una simetría fundamental en la formulación de la teoría de Dirac, sino que también ilustra el papel de la <strong>conjugación de carga</strong> como una transformación que convierte partículas en sus correspondientes antipartículas, invirtiendo sus cargas internas (como la carga eléctrica o el número leptónico) pero manteniendo su momento y energía.</p>
+<h3 id="covariantes-bilineales">Covariantes Bilineales</h3>
+<p>Sea <span class="arithmatex">\(\psi\)</span> un espinor de Dirac y supongamos que queremos transformarlo de un marco de referencia inercial a otro, es decir hallar una transformación <span class="arithmatex">\(S\)</span> tal que:</p>
+<div class="arithmatex">\[
+\psi' = S\psi
+\]</div>
+<p>Para la cual se verifique la ecuación de Dirac:</p>
+<div class="arithmatex">\[ 
+i\hbar \gamma^{\mu} \partial'_{\mu}\psi' - m \psi' = 0
+\qquad \text{con }
+\partial'_{\mu} = \frac{\partial x^{\nu}}{\partial x'^{\mu}} \frac{\partial}{\partial x^{\nu}} = \Lambda_{\mu}{}^{\nu} \partial_{\nu} 
+\]</div>
+<p>En donde <span class="arithmatex">\(\Lambda_{\mu}{}^{\nu}\)</span> son los elementos de la transformación de Lorentz inversa. Reemplazando las transformaciones de coordenadas y el espinor transformado en la ecuación primada obtenemos que:</p>
+<div class="arithmatex">\[
+i\hbar \gamma^{\mu}  \frac{\partial x^{\nu}}{\partial x'^{\mu}} \partial_{\nu} (S\psi) - m c  (S\psi) = 0
+\]</div>
+<div class="arithmatex">\[
+\Rightarrow i\hbar S^{-1} \gamma^{\mu} \Lambda_{\mu}{}^{\nu} S\partial_{\nu} \psi -mc\psi = 0
+\]</div>
+<p>De esta ultima relación puede verse que las matrices de Dirac deben verificar que:</p>
+<div class="arithmatex">\[
+S\gamma^{\nu} = \gamma^{\mu} \Lambda_{\mu}{}^{\nu} S
+\]</div>
+<p>Expandiendo la suma sobre <span class="arithmatex">\(\mu\)</span> y reemplazando los coeficientes de la transformación de Lorentz:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+S\gamma^0 = (\gamma^{0} S) \gamma + (\gamma^{1} S) \beta \gamma 
+\\ \\
+S \gamma^{1} = (\gamma^{0} S) \beta \gamma + (\gamma^{1} S) \gamma
+\\ \\
+ S \gamma^{2} = \gamma^{2} S
+\\ \\
+ S \gamma^{3} = \gamma^{3} S
+\end{aligned}
+\]</div>
+<p>Debemos mostrar ahora que <span class="arithmatex">\(S = a_+ + a_- \gamma^0 \gamma^1\)</span> transforma el espinor de Dirac de un marco de referencia a otro, en donde:</p>
+<div class="arithmatex">\[ 
+a_{\pm} = \pm \sqrt{\frac{1}{2}(\gamma \pm 1)}
+\]</div>
+<p>Notemos que <span class="arithmatex">\(\gamma^0\)</span> y <span class="arithmatex">\(\gamma^1\)</span> anti conmutan con <span class="arithmatex">\(\gamma^2\)</span> y <span class="arithmatex">\(\gamma^3\)</span>, por lo que su producto también anticonmuta. Luego las últimas dos ecuaciones se cumplen trivialmente.</p>
+<div class="arithmatex">\[ 
+\begin{aligned}
+S \gamma^0 = a_+ \gamma^0 + a_- \gamma^0 \gamma^1 \gamma^0 = a_+ \gamma^0 - a_- \gamma^0 \gamma^0 \gamma^1 = a_+ \gamma^0 - a_- \gamma^1 
+\\ \\
+\gamma^0 S = \gamma^0 a_+ + \gamma^0 a_- \gamma^0 \gamma^1 = a_+ \gamma^0 + a_- \gamma^1 
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[
+\begin{aligned}
+S \gamma^1 = a_+ \gamma^1 + a_- \gamma^0 \gamma^1 \gamma^1 = a_+ \gamma^1 - a_- \gamma^0 
+\\ \\ 
+\gamma^1 S = \gamma^1 a_+ - a_- \gamma^0 \gamma^1 \gamma^1 = a_+ \gamma^1 + a_- \gamma^0 
+\end{aligned}
+\]</div>
+<p>Luego :</p>
+<div class="arithmatex">\[ 
+\begin{aligned}
+a_+ \gamma^0 -a_- \gamma^1 =(a_+ \gamma^0 + a_- \gamma^1) \gamma + (a_+ \gamma^1 + a_- \gamma^0) \beta \gamma 
+\\ \\
+= \gamma(a_+ + \beta a_-)\gamma_0 + \gamma(a_- + \beta a_+) \gamma^1 
+\end{aligned}
+\]</div>
+<p>Por otra parte, de la definición de <span class="arithmatex">\(\gamma\)</span></p>
+<div class="arithmatex">\[ 
+\gamma = \frac{1}{\sqrt{1 - \beta^2}} \Rightarrow \beta^2 = \frac{\gamma^2 - 1}{\gamma^2} \Rightarrow \frac{\sqrt{(\gamma-1)(\gamma+1)}}{\gamma}
+\]</div>
+<p>De esta forma se puede probar que:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\gamma(a_+ + \beta a_-) = \gamma \left[ \sqrt{\frac{1}{2}(\gamma + 1)} - \frac{\sqrt{(\gamma-1)(\gamma+1)}}{\gamma} \sqrt{\frac{1}{2}(\gamma - 1)} \right]
+\\ \\
+= \sqrt{\frac{1}{2}(\gamma + 1)} = a_+ 
+\end{aligned}
+\]</div>
+<p>$$
+\begin{aligned}
+\gamma(a_- + \beta a_+) = \gamma \left[-\sqrt{\frac{1}{2}(\gamma - 1)} + \frac{\sqrt{(\gamma-1)(\gamma+1)}}{\gamma} \sqrt{\frac{1}{2}(\gamma + 1)} \right]
+\ \</p>
+<p>= \sqrt{\frac{1}{2}(\gamma - 1)} = a_- 
+\end{aligned}
+$$</p>
+<p>Verificándose que:</p>
+<div class="arithmatex">\[ 
+a_+ \gamma^0 -a_- \gamma^1 =(a_+ \gamma^0 + a_- \gamma^1) \gamma + (a_+ \gamma^1 + a_- \gamma^0) \beta \gamma 
+\]</div>
+<p>Luego <span class="arithmatex">\(S = a_+ + a_- \gamma^0 \gamma^1\)</span> satisface estas condiciones.</p>
 
 
 
