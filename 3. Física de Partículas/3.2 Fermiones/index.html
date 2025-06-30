@@ -961,18 +961,18 @@ i\hbar \begin{pmatrix} \mathbb{\hat{I}} &amp; 0 \\ 0 &amp; -\mathbb{\hat{I}} \en
 <p>Notemos que la suma <span class="arithmatex">\(\gamma^{\mu} k_{\mu}\)</span> puede escribirse como:</p>
 <div class="arithmatex">\[ 
 \gamma^{\mu} k_{\mu} = \gamma^0k_0 - \vec{\gamma}\cdot\vec{k} 
-= k^0 \begin{pmatrix} \hat{\mathbb{I}} &amp; 0 \\ 0 &amp; -\hat{\mathbb{I}} \end{pmatrix} - \vec{k} \cdot \begin{pmatrix} 0 &amp; \vec{\sigma} \\ -\vec{\sigma} &amp; 0 \end{pmatrix} 
-= \begin{pmatrix} k^0\hat{\mathbb{I}} &amp; -\vec{k} \cdot \vec{\sigma} \\ \vec{k} \cdot \vec{\sigma} &amp; -k^0\hat{\mathbb{I}} \end{pmatrix} 
+= k_0 \begin{pmatrix} \hat{\mathbb{I}} &amp; 0 \\ 0 &amp; -\hat{\mathbb{I}} \end{pmatrix} - \vec{k} \cdot \begin{pmatrix} 0 &amp; \vec{\sigma} \\ -\vec{\sigma} &amp; 0 \end{pmatrix} 
+= \begin{pmatrix} k_0\hat{\mathbb{I}} &amp; -\vec{k} \cdot \vec{\sigma} \\ \vec{k} \cdot \vec{\sigma} &amp; -k_0\hat{\mathbb{I}} \end{pmatrix} 
 \]</div>
 <p>Reemplazando en la ecuación de ondas planas, podemos escribir esta de forma matricial como:</p>
 <div class="arithmatex">\[ 
-\begin{pmatrix} \hat{\mathbb{I}}(\hbar k^0 - mc) &amp; -\hbar \vec{k} \cdot \vec{\sigma} \\ \hbar \vec{k} \cdot \vec{\sigma} &amp; -\hat{\mathbb{I}}(\hbar k^0 + mc) \end{pmatrix} \begin{pmatrix} u_A \\ u_B\end{pmatrix} = 0 
+\begin{pmatrix} \hat{\mathbb{I}}(\hbar k_0 - mc) &amp; -\hbar \vec{k} \cdot \vec{\sigma} \\ \hbar \vec{k} \cdot \vec{\sigma} &amp; -\hat{\mathbb{I}}(\hbar k_0 + mc) \end{pmatrix} \begin{pmatrix} u_A \\ u_B\end{pmatrix} = 0 
 \]</div>
 <p>En donde las componentes <span class="arithmatex">\(u_A\)</span> y <span class="arithmatex">\(u_B\)</span> corresponden a la partícula y la anti-partícula respectivamente. Resolviendo obtenemos:</p>
 <div class="arithmatex">\[
-u_A = \frac{\vec{k} \cdot \vec{\sigma}}{k^0 - mc/\hbar} u_B 
+u_A = \frac{\vec{k} \cdot \vec{\sigma}}{k_0 - mc/\hbar} u_B 
 \qquad
-u_B = \frac{\vec{k} \cdot \vec{\sigma}}{k^0 + mc/ \hbar} u_A
+u_B = \frac{\vec{k} \cdot \vec{\sigma}}{k_0 + mc/ \hbar} u_A
 \]</div>
 <div class="arithmatex">\[
 \vec{k} \cdot \vec{\sigma} 
@@ -987,7 +987,7 @@ u_B = \frac{\vec{k} \cdot \vec{\sigma}}{k^0 + mc/ \hbar} u_A
 \]</div>
 <p>Usando estas expresiones podemos probar que <span class="arithmatex">\(\hbar \vec{k}\)</span> es en realidad el <span class="arithmatex">\(4\)</span>-momento de la onda. Reemplazando <span class="arithmatex">\(u_B\)</span> en <span class="arithmatex">\(u_A\)</span> obtenemos que:</p>
 <div class="arithmatex">\[
-u_A = \frac{|\vec{k}|^2}{(k^0)^2 - (mc/\hbar)^2} u_A 
+u_A = \frac{|\vec{k}|^2}{(k_0)^2 - (mc/\hbar)^2} u_A 
 \Rightarrow 
 (k^0)^2 - |\vec{k}|^2 = k\cdot k  = (mc)^2 /\hbar^2
 \]</div>
@@ -1183,7 +1183,7 @@ a_+ \gamma^0 -a_- \gamma^1 =(a_+ \gamma^0 + a_- \gamma^1) \gamma + (a_+ \gamma^1
 <div class="arithmatex">\[
 \begin{aligned}
 \gamma(a_- + \beta a_+) = \gamma \left[-\sqrt{\frac{1}{2}(\gamma - 1)} + \frac{\sqrt{(\gamma-1)(\gamma+1)}}{\gamma} \sqrt{\frac{1}{2}(\gamma + 1)} \right]
-\\ \\
+\\\\
 = \sqrt{\frac{1}{2}(\gamma - 1)} = a_- 
 \end{aligned}
 \]</div>
