@@ -790,14 +790,15 @@ u = \sqrt{(\hbar|\vec{k}|)^2 + |\vec{p}_3|^2 - 2 \hbar|\vec{k}||\vec{p}_3| \cos 
 <div class="arithmatex">\[
 \frac{du}{d|\vec{p_3}|} = \frac{|\vec{p}_3| - \hbar{\vec{k} \cos \theta}}{u - |\vec{p}_3|} + 1 =  \frac{u - \hbar{\vec{k} \cos \theta}}{u - |\vec{p}_3|} 
 \]</div>
-<p>Integrando sobre <span class="arithmatex">\(\vec{p}_4\)</span> y derivando sobre el ángulo solido <span class="arithmatex">\(\Omega\)</span>, la integral queda solo en términos del modulo <span class="arithmatex">\(|\vec{p}_3|\)</span>. Reemplazando <span class="arithmatex">\(u\)</span> en la integral: </p>
+<p>Reemplazando <span class="arithmatex">\(u\)</span> en la integral: </p>
 <div class="arithmatex">\[
-\frac{d\sigma}{d\Omega} = \left(\frac{\hbar}{8\pi}\right)^2 \frac{S}{\hbar\omega m} |\mathcal{M}|^2 
-\int_0^{\infty} \frac{\delta(mc + \hbar|\vec{k}| - u)}{(u-|\vec{p}_3|)|\vec{p}_3|} |\vec{p}_3|^2 d|\vec{p}_3|
+\frac{d\sigma}{d\Omega} = \left(\frac{\hbar}{8\pi}\right)^2 \frac{S}{\hbar\omega m} 
+\int 
+|\mathcal{M}|^2  \frac{\delta(mc + \hbar|\vec{k}| - u)}{(u-|\vec{p}_3|)|\vec{p}_3|} |\vec{p}_3|^2 \sin \theta d|\vec{p}_3| d\theta d\phi
 \]</div>
 <p>Haciendo el cambio de variable:</p>
 <div class="arithmatex">\[ 
-\frac{d\sigma}{d\Omega} = \left(\frac{\hbar}{8\pi}\right)^2 \frac{S}{\hbar\omega m} |\mathcal{M}|^2 \int_0^{\infty} \frac{\delta(mc + \hbar|\vec{k}| - u)}{ u - \hbar |\vec{k}| \cos\theta} |\vec{p}_3| du
+\frac{d\sigma}{d\Omega} = \left(\frac{\hbar}{8\pi}\right)^2 \frac{S}{\hbar\omega m}  \int |\mathcal{M}|^2 \frac{\delta(mc + \hbar|\vec{k}| - u)}{ u - \hbar |\vec{k}| \cos\theta} |\vec{p}_3| \sin\theta du d\theta d\phi
 \]</div>
 <p>Al integrar la delta Dirac nos genera la siguiente igualdad. </p>
 <div class="arithmatex">\[ 
@@ -815,13 +816,17 @@ mc\hbar|\vec{k}| = |\vec{p}_4|(mc+\hbar|\vec{k}|-\hbar|\vec{k}|\cos\theta)
 <div class="arithmatex">\[
 |\vec{p}_4| = \frac{mc\hbar|\vec{k}|}{mc+\hbar|\vec{k}|(1-\cos\theta)} = \frac{mc\hbar |\vec{k}|}{u - \hbar|\vec{k}|\cos \theta}
 \]</div>
-<p>Podemos finalmente reemplazara en la sección eficaz diferencial este valor de <span class="arithmatex">\(|\vec{p}_4|\)</span>, y <span class="arithmatex">\(S = 1\)</span> y obtenemos:</p>
+<p>Reemplazando en la sección eficaz diferencial este valor de <span class="arithmatex">\(|\vec{p}_4|\)</span>, y <span class="arithmatex">\(S = 1\)</span> e integrando obtenemos:</p>
 <div class="arithmatex">\[ 
-\frac{d\sigma}{d\Omega} = \left(\frac{\hbar}{8\pi}\right)^2 \frac{S}{\hbar\omega m} |\mathcal{M}|^2 \int_0^{\infty} \frac{\delta(mc + \hbar|\vec{k}| - u)}{(u - \hbar |\vec{k}| \cos\theta)^2}  mc\hbar|\vec{k}| du
+\sigma = \left(\frac{\hbar}{8\pi}\right)^2 \frac{S}{\hbar\omega m} \int |\mathcal{M}|^2 \frac{mc\hbar|\vec{k}|  \sin \theta}{(mc + \hbar|\vec{k}| - \hbar |\vec{k}| \cos\theta)^2}  d\theta d\phi
 \]</div>
-<p>Integrando sobre <span class="arithmatex">\(u\)</span> la sección transversal diferencial será:</p>
-<div class="arithmatex">\[
-\frac{d\sigma}{d\Omega} = \left(\frac{\hbar c}{8\pi}\right)^2 \frac{|\mathcal{M}|^2} {[mc^2 + \hbar \omega(1-\cos\theta)]^2} 
+<p>Luego la integral se esta realizando sobre una derivada:</p>
+<div class="arithmatex">\[ 
+\sigma = \left(\frac{\hbar}{8\pi}\right)^2 \frac{S}{\hbar\omega m} \int |\mathcal{M}|^2
+\frac{d}{d\theta} \left(
+\frac{mc}{mc + \hbar|\vec{k}| - \hbar |\vec{k}| \cos\theta} 
+\right)
+d\theta d\phi
 \]</div>
 <p>Con <span class="arithmatex">\(\omega\)</span> la frecuencia del fotón incidente y <span class="arithmatex">\(\theta\)</span> el ángulo del fotón dispersado con respecto a este. Hallemos ahora la amplitud <span class="arithmatex">\(\mathcal{M}\)</span> usando el ritual de Feynman. Notemos que para  el proceso <span class="arithmatex">\(e^- + \gamma \rightarrow e^- + \gamma\)</span> hay dos diagramas de Feynman de segundo orden. </p>
 <p><img alt="Efecto Compton" src="../../assets/20250226010357.png" /></p>

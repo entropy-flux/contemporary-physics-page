@@ -903,7 +903,7 @@ p^{\mu} p_{\mu} - (mc)^2 = (\gamma^{\mu} p_{\mu} - mc)(\gamma^{\nu} p_{\nu} + mc
 \{\gamma^{\mu}, \gamma^{\nu}\} = \gamma^{\mu} \gamma^{\nu} + \gamma^{\nu} \gamma^{\mu} = 2g^{\mu \nu} I
 \]</div>
 <p>Con <span class="arithmatex">\(g\)</span> el tensor métrico de Minkowski. Esta ultima relación se denomina relación de anti conmutación de Clifford y puede demostrarse que las matrices que satisfacen esta relación son:</p>
-<div class="arithmatex">\[ \gamma^{0} = \begin{pmatrix} \hat{\mathbb{I}} &amp; 0 \\ 0 &amp; -\hat{\mathbb{I}} \end{pmatrix} \qquad \gamma^{\mu} = \begin{pmatrix} 0 &amp; \hat{\sigma}_{\mu} \\ \hat{\sigma}_{\mu} &amp; 0 \ \end{pmatrix} \]</div>
+<div class="arithmatex">\[ \gamma^{0} = \begin{pmatrix} \hat{\mathbb{I}} &amp; 0 \\ 0 &amp; -\hat{\mathbb{I}} \end{pmatrix} \qquad \gamma^{\mu} = \begin{pmatrix} 0 &amp; \hat{\sigma}_{\mu} \\ -\hat{\sigma}_{\mu} &amp; 0 \ \end{pmatrix} \]</div>
 <p>Con <span class="arithmatex">\(\hat{\sigma}_{\mu}\)</span> las matrices de Pauli:</p>
 <div class="arithmatex">\[
 \hat{\sigma}_1 = 
@@ -1145,7 +1145,7 @@ S \gamma^{1} = (\gamma^{0} S) \beta \gamma + (\gamma^{1} S) \gamma
 <div class="arithmatex">\[ 
 a_{\pm} = \pm \sqrt{\frac{1}{2}(\gamma \pm 1)}
 \]</div>
-<p>Notemos que <span class="arithmatex">\(\gamma^0\)</span> y <span class="arithmatex">\(\gamma^1\)</span> anti conmutan con <span class="arithmatex">\(\gamma^2\)</span> y <span class="arithmatex">\(\gamma^3\)</span>, por lo que su producto también anticonmuta. Luego las últimas dos ecuaciones se cumplen trivialmente.</p>
+<p>Notemos que <span class="arithmatex">\(\gamma^0\)</span> y <span class="arithmatex">\(\gamma^1\)</span> anti conmutan con <span class="arithmatex">\(\gamma^2\)</span> y <span class="arithmatex">\(\gamma^3\)</span>, por lo que su producto también anti conmuta. Luego las últimas dos ecuaciones se cumplen trivialmente. Para las primeras dos vemos que:</p>
 <div class="arithmatex">\[ 
 \begin{aligned}
 S \gamma^0 = a_+ \gamma^0 + a_- \gamma^0 \gamma^1 \gamma^0 = a_+ \gamma^0 - a_- \gamma^0 \gamma^0 \gamma^1 = a_+ \gamma^0 - a_- \gamma^1 
@@ -1180,13 +1180,13 @@ a_+ \gamma^0 -a_- \gamma^1 =(a_+ \gamma^0 + a_- \gamma^1) \gamma + (a_+ \gamma^1
 = \sqrt{\frac{1}{2}(\gamma + 1)} = a_+ 
 \end{aligned}
 \]</div>
-<p>$$
+<div class="arithmatex">\[
 \begin{aligned}
 \gamma(a_- + \beta a_+) = \gamma \left[-\sqrt{\frac{1}{2}(\gamma - 1)} + \frac{\sqrt{(\gamma-1)(\gamma+1)}}{\gamma} \sqrt{\frac{1}{2}(\gamma + 1)} \right]
-\ \</p>
-<p>= \sqrt{\frac{1}{2}(\gamma - 1)} = a_- 
+\\ \\
+= \sqrt{\frac{1}{2}(\gamma - 1)} = a_- 
 \end{aligned}
-$$</p>
+\]</div>
 <p>Verificándose que:</p>
 <div class="arithmatex">\[ 
 a_+ \gamma^0 -a_- \gamma^1 =(a_+ \gamma^0 + a_- \gamma^1) \gamma + (a_+ \gamma^1 + a_- \gamma^0) \beta \gamma 

@@ -889,10 +889,12 @@ V(R) = \alpha \exp(-aR) - \frac{e^2}{4\pi \epsilon_0 R}
 E = V(\infty) - V(R_0) = - \alpha \exp(-aR_0) + \frac{e^2}{4\pi \epsilon_0 R_0}
 \]</div>
 <p>Debemos expresar <span class="arithmatex">\(E\)</span> en términos de la separación de equilibrio <span class="arithmatex">\(R_0\)</span> y la curvatura de la energía potencial <span class="arithmatex">\(K\)</span>. Para ello derivamos la expresión del potencial:</p>
-<div class="arithmatex">\[ 
-V'(R) = -\alpha a \exp(-aR) + \frac{e^2}{4\pi\epsilon_0R^2}\]</div>
 <div class="arithmatex">\[
+\begin{aligned}
+V'(R) = -\alpha a \exp(-aR) + \frac{e^2}{4\pi\epsilon_0R^2}
+\\
 V''(R) = \alpha a^2 \exp(-aR) - \frac{e^2}{2\pi\epsilon_0 R^3} 
+\end{aligned}
 \]</div>
 <p>Para la separación de equilibrio <span class="arithmatex">\(R_0\)</span> se verifica que:</p>
 <div class="arithmatex">\[ 
@@ -908,10 +910,11 @@ K = V''(R_0) = a \frac{e^2}{4\pi\epsilon_0 R_0^2} - \frac{e^2}{2\pi\epsilon_0R_0
 \]</div>
 <p>Reemplazando en la energía <span class="arithmatex">\(E\)</span>:</p>
 <div class="arithmatex">\[ 
+\begin{aligned}
 E = - \frac{1}{a} \frac{e^2}{4\pi\epsilon_0R_0^2} + \frac{e^2}{4\pi\epsilon_0R_0} =  \frac{ke^2}{R_0^2} (1 - \frac{1}{aR_0}) 
-\]</div>
-<div class="arithmatex">\[ 
+\\ \\ 
 E = \frac{ke^2}{R_0^2}\left(1 - \frac{1}{K R_0^3 / ke^2 + 2}\right)
+\end{aligned}
 \]</div>
 <p>Reemplazando:</p>
 <ul>
@@ -922,16 +925,15 @@ E = \frac{ke^2}{R_0^2}\left(1 - \frac{1}{K R_0^3 / ke^2 + 2}\right)
 </ul>
 <p>Finalmente podemos analizar el proceso de disociación del <span class="arithmatex">\(\text{Li}^+\text{F}^-\)</span> y <span class="arithmatex">\(\text{Li}\)</span> y <span class="arithmatex">\(\text{F}\)</span>. </p>
 <div class="arithmatex">\[ 
+\begin{aligned}
 \text{Li}^+\text{F}^- \rightarrow \text{Li}^+ + \text{F}^-  \qquad  E = 6.7 \text{eV} 
-\]</div>
-<div class="arithmatex">\[ 
+\\ \\
 F^- \rightarrow F + \text{}e^- \qquad \Delta E = 3.4\text{eV}
-\]</div>
-<div class="arithmatex">\[ 
+\\ \\
 \text{Li}^+ + e^- \rightarrow \text{Li} \qquad \Delta E = -5,4\text{eV} 
-\]</div>
-<div class="arithmatex">\[ 
+\\ \\ 
 \Rightarrow \text{Li}^+\text{F}^- \rightarrow \text{Li} + \text{F} \qquad E = 6.7 \text{eV} + 3.4 \text{eV}  - 5.4\text{eV} = 4.7 \text{eV}
+\end{aligned}
 \]</div>
 <p>Finalmente la energía de disociación del <span class="arithmatex">\(\text{LiF}\)</span> será de <span class="arithmatex">\(E = 4.7 \text{eV}\)</span>.</p>
 
